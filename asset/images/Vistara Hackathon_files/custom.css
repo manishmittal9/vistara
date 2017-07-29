@@ -91,16 +91,16 @@
 /*Custom CSS*/
 #landing{
     top: 0px;
-    height: 80vh;
+    height: 70vh;
     background-image: url(../images/landing_background.png);
-    background-position: top;
+    background-position: center;
     background-size: cover;
 }
 .landing-inside img{
     width: 100%;
     height: 30px;
     position: relative;
-    top: 76.9vh;
+    top: 66.9vh;
 }
 @media (min-width: 768px){
     .navbar-nav>li {
@@ -113,36 +113,7 @@
 .navbar-header{
     width: 230px;
 }
-.navbar-nav {width: calc(100% - 460px);text-align: center;}
+.navbar-nav {width: calc(100% - 500px);text-align: center;}
 .navbar-nav >li {
     float: none;display: inline-block;
-}
-.navbar-collapse button{
-    margin:20px 30px;
-    width: 170px;
-    padding: 10px 0;
-    background-color: transparent;
-    color: #dddddd;
-    border: 2px solid #dddddd;
-    border-radius: 6px;
-    transition: all 0.3s;
-}
-.navbar-collapse button:hover{
-    background-color: #fff;
-    color: #3d0f3b;
-    border: 2px solid #fff;
-}
-h3{
-    font-size:11px;
-    color: #000;
-    text-transform: uppercase;
-}
-#about{
-    padding:100px 0;
-    text-align: center;
-}
-#about p{
-    font-size: 13px;
-    letter-spacing: 0.5px;
-    line-height: 26px;
 }
