@@ -1,38 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
 
-
 .navbar img{
-    width: 200px;
-}
-.navbar-default .navbar-collapse, .navbar-default .navbar-form{
-    border:none !important;
+    max-width: 200px;
 }
 
-
-/*Navigation Stylling*/
+/*Navigation Styling*/
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
-    margin-left: auto;
+    margin-left: 5%;
 }
+
 .navbar-default {
-  background:none;
-  border:none;
+  background: #fff;
+  opacity: 0.9;
+  border: none;
 }
-.navbar-default .navbar-brand {
-  color: #dddddd;
-}
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-  color: #ffffff;
-}
-.navbar-default .navbar-text {
-  color: #dddddd;
-}
+
 .navbar-default .navbar-nav > li > a {
-  color: #dddddd;
+  color: #0b0b0b;
+  font-weight: bold;
+  text-transform: uppercase;
 }
+
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #ffffff;
+  color: #57204a;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -92,16 +83,16 @@
     }
 }
 
-/*Navigation Affex*/
+/*Navigation Affix*/
 .affix {
-    top: 0;
-    width: 100%;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    /*background-color: rgba(82, 29, 76, 0.9);
-    border-color: rgba(82, 29, 76, 0.9);*/
-    background-color: #fff;
-    box-shadow: 2px 0px 10px rgba(0,0,0,0.5);
+  top: 0;
+  width: 100%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  /*background-color: rgba(82, 29, 76, 0.9);
+  border-color: rgba(82, 29, 76, 0.9);*/
+  background-color: #fff;
+  box-shadow: 2px 0px 10px rgba(0,0,0,0.5);
 
 }
 .affix a {
@@ -112,16 +103,14 @@
 .affix img:nth-child(1){
     display: none;
 }
-.navbar img:nth-child(2){
-    display: none
-}
 .affix img:nth-child(2){
     display: inline-block;
 }
 .affix #registration-btn{
     display: inline-block;
 }
-.affix .navbar-collapse button{
+
+.affix button#registration-btn{
     margin:20px 30px;
     width: 170px;
     padding: 10px 0;
@@ -132,7 +121,7 @@
     border-radius: 6px;
     transition: all 0.3s;
 }
-.affix .navbar-collapse button:hover{
+.affix button#registration-btn:hover{
     background-color: #501c4b;
     color: #fff;
     border: 1px solid #501c4b;
@@ -159,14 +148,12 @@
         padding: 30px 0;
     }
 }
-.navbar-header{
-    width: 230px;
-}
-.navbar-nav {width: calc(100% - 460px);text-align: center;}
-.navbar-nav >li {
-    float: none;display: inline-block;
-}
-.navbar-collapse button{
+  .navbar-nav {width: calc(100% - 460px);text-align: center;}
+  .navbar-nav >li {
+      float: none;display: inline-block;
+  }
+
+.navbar button#registration-btn{
     margin:20px 30px;
     width: 170px;
     padding: 10px 0;
@@ -177,7 +164,7 @@
     border-radius: 6px;
     transition: all 0.3s;
 }
-.navbar-collapse button:hover{
+.navbar button#registration-btn:hover{
     background-color: #fff;
     color: #3d0f3b;
     border: 1px solid #fff;
