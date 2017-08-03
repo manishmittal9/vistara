@@ -6,20 +6,24 @@
 }
 
 .navbar-default {
-  background: #fff;
-  opacity: 0.9;
+  background: rgba(0,0,0,0);
+  opacity: 1;
   border: none;
+  color: #fff;
+  height: auto;
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #0b0b0b;
-  font-weight: bold;
+  color: #ffffff;
+  font-weight: 500;
   text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1.5px;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #57204a;
+  color: #e4e4e4;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -54,9 +58,9 @@
 }
 
 .navbar-brand img{
-  height: 150%;
+  height: 149%;
   padding: 15px;
-  width: auto;
+  /* width: 200px; */
 }
 
 @media (max-width: 767px) {
@@ -85,6 +89,34 @@
     margin: 15px auto !important;
     float: left !important;
   }
+  .navbar-header{
+    background-color:#fff;
+
+  }
+    .navbar img:nth-child(1){
+        display: inline-block !important;
+    }
+    .navbar-header img:nth-child(2){
+        display: none;
+    }
+    .affix .navbar-header img:nth-child(1){
+        display: 
+    }
+    .navbar-collapse{
+        background-color:#fff;
+    }
+    .navbar-default .navbar-nav > li > a {
+        color: #57204a;;
+    }
+    .navbar button#registration-btn {
+         color: #57204a; 
+        border: 1px solid #57204a !important;
+        width: 100% !important;
+    }
+    .navbar-nav {
+        width: 100% !important;
+        text-align: center;
+    }
 }
 
 @media (min-width: 768px){
@@ -93,7 +125,21 @@
       padding-bottom: 0px;
     }
 }
-
+.navbar img:nth-child(1){
+    display: none;
+}
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 21px;
+    margin-right: 31px;
+    margin-bottom: 21px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
 /*Navigation Affix*/
 .affix {
   top: 0;
@@ -114,26 +160,47 @@
 .affix img{
     display: inline;
 }
+.affix img:nth-child(2){
+    display: none;
+}
+.affix img:nth-child(1){
+    display: inline-block;
+}
 .affix #registration-btn{
   display: inline-block;
+  color: #57204a;
+  border: 1px solid #57204a !important;
 }
 
 .navbar button#registration-btn{
     margin: 15px 5px auto;
-    width: 170px;
+    width: 150px;
     float: right;
     padding: 10px 0;
     outline: none;
     background-color: transparent;
-    color: #57204a;
-    border: 1px solid #57204a;
+    /* color: #ffffff; */
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.navbar .affix button#registration-btn{
+    margin: 15px 5px auto;
+    width: 150px;
+    float: right;
+    padding: 10px 0;
+    outline: none;
+    background-color: transparent;
+    color: #501c4b;
+    border: 1px solid #501c4b;
     border-radius: 6px;
     transition: all 0.3s;
 }
 
 .navbar button#registration-btn:hover{
-    color: #ddd;
-    border: 1px solid #ddd;
+    /* color: #ddd; */
+    border: 1px solid #fff;
 }
 
 /*Custom CSS*/
@@ -158,7 +225,7 @@
         padding: 20px 0;
     }
 }
-.navbar-nav {width: calc(100% - 460px);text-align: center;}
+.navbar-nav {width: calc(100% - 360px);text-align: center;}
 .navbar-nav >li {
     float: none;display: inline-block;
 }
