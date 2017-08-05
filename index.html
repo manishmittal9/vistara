@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="asset/css/custom.css">
 </head>
 <div class="se-pre-con"></div>
-<body>
+<body data-spy="scroll" data-target="#spyOnThis">
     
     <!--Navigation Bar-->
     <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="180">
@@ -39,12 +39,12 @@
                     <li><a href="#rules">Rules</a></li> 
                     <li><a href="#contact">Contact</a></li> 
                 </ul>
-                <button id="registration-btn">Register</button>
+                <button id="registration-btn" data-toggle="modal" data-target="#register">Register</button>
             </div>
         </div>
     </nav>
 
-<div class="container-fluid" style="padding:0px;">
+<div class="container-fluid" style="padding:0px;"  id="spyOnThis">
     <!--Landing-->
     <div id="landing">
         <div class="landing-inside">
@@ -53,7 +53,7 @@
                 <!-- <h1>#Vistara<br> <b>Hackathon</b></h1> -->
                 <img src="asset/images/vh_logo.png" style="width:400px; display:block;height:auto;postion:static;top:auto; margin-left:auto; margin-right: auto; margin-bottom:50px; padding-top:23vh;">
                 <p>Change the world of hassle &amp; puzzled Airlines during a 30 hour hack, in which you’ll take air retailing to the next level.</p>
-                <button type="button" class="btn btn-info btn-lg">Register Here</button>
+                <button type="button" class="btn  btn-lg" data-toggle="modal" data-target="#register">Register</button>
             </div>
         </div>
     </div>
@@ -62,7 +62,7 @@
     <div class="container" id="about">
         <h3>About the hack</h3>
 
-        <div class="row">
+        <!-- <div class="row">
               <div class="col-sm-4">
                   <img src="asset/images/delhi.jpg" class="img-responsive">
                   <p>Location 1: <b>New Delhi</b></p>
@@ -76,19 +76,21 @@
             <div class="col-sm-4"><img src="asset/images/bangalore.jpg" class="img-responsive">
               <p>Location 2: <b>Bangalore</b></p>
             </div>
-        </div>
+        </div> -->
+        
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend justo eu erat tempus molestie. Quisque rhoncus quis enim ac pretium. Integer a dapibus neque. Fusce non ligula a orci pharetra blandit sed non nisl. In pharetra mauris vel ipsum mollis scelerisque. Nam interdum ex varius justo vehicula, non bibendum velit vestibulum. Aenean congue metus odio, non rutrum risus 
 vestibulum non. Morbi laoreet ut nisl et malesuada. Morbi ornare facilisis velit quis lobortis. Fusce a molestie nulla. Proin vitae hendrerit dui. Proin malesuada libero eleifend porttitor sagittis. Vivamus fermentum ut ante at congue. Mauris sed neque quam.
         </p>
-        <div id="img-para">
-            <img src="asset/images/alt-logo.png">
+<img src="asset/images/date_creative.png" style="width:60%; margin-top: 20px; margin-bottom: 30px;">
+         <!-- <div id="img-para">
+            <img src="asset/images/alt-logo.png"> -->
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend justo eu erat tempus molestie. Quisque rhoncus quis enim ac pretium. Integer a dapibus neque. Fusce non ligula a orci pharetra blandit sed non nisl. In pharetra mauris vel ipsum mollis scelerisque. Nam interdum ex varius justo vehicula, non bibendum velit vestibulum. Aenean congue metus odio, non rutrum risus 
 vestibulum non. Morbi laoreet ut nisl et malesuada. Morbi ornare facilisis velit quis lobortis. Fusce a molestie nulla. Proin vitae hendrerit dui. Proin malesuada libero eleifend porttitor sagittis. Vivamus fermentum ut ante at congue. Mauris sed neque quam.
             </p>
-        </div>
-        <!--<img src="asset/images/circle1.png" id="circle1">-->
+        <!-- </div>  -->
+        
     </div>
 
     <!--Problem Statement-->
@@ -404,6 +406,30 @@ vestibulum non. Morbi laoreet ut nisl et malesuada. Morbi ornare facilisis velit
     </div>
 
 </div>
+<!-- Modal -->
+<div class="modal fade" id="register" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Registration</h4>
+        </div>
+        <div class="modal-body">
+            <p>Registration will be open soon.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
