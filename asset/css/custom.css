@@ -265,7 +265,7 @@ body {
 .landing-inside p{
   text-align: center;
   color: white;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 @media (min-width: 768px){
@@ -970,9 +970,40 @@ Main components
     transform: translateX(0);
   }
 }
-
 #schedule{
   background-color: #e9f0f5;
 }
-
-   
+.landing-inside button{
+    background-color: #fff;
+    color: #57204a;
+    border: 1px solid #57204a;
+    font-weight: 300;
+    margin-top: 20px;
+    transition: 0.2s all;
+    width: 150px;
+    outline: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+.landing-inside button:hover, .landing-inside button:focus, .landing-inside button:active{
+    background-color:#fff;
+    color: #57204a;
+    outline: 0;
+}
+#spyOnThis {
+ height:100%;
+ overflow:auto;
+}
+.modal-header{
+    background-color: #57204a;
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+}
+.modal-title {
+    font-weight: 100;
+    margin: 0;
+    line-height: 1.42857143;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
