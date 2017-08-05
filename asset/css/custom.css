@@ -991,12 +991,9 @@ Main components
     color: #57204a;
     outline: 0;
 }
-#spyOnThis {
- height:100%;
- overflow:auto;
-}
+
 .modal-header{
-    background-color: #57204a;
+    background-color: #b28a31;
     color: #fff;
     text-align: center;
     font-weight: 100;
@@ -1008,4 +1005,27 @@ Main components
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 12px;
+}
+#modal-style h3 {
+    padding: 10px 30px;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    font-weight: 100;
+    text-transform: initial;
+}
+#modal-style p {
+    padding: 0 30px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: inherit;
+}
+.modal-body button{
+    padding: 10px 30px;
+    background-color: #ffffff;
+    color: #b28a31;
+    letter-spacing: 7px;
+    border: 1px solid #b28a31;
+    text-transform: uppercase;
+    outline: 0;
+    font-size: 11px;
 }
