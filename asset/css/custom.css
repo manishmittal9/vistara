@@ -236,7 +236,7 @@ body {
 /*Custom CSS*/
 #landing{
     top: 0px;
-    height: 83vh;
+    height: 100vh;
     background-image: url(../images/landing_background.png);
     background-position: top;
     background-size: cover;
@@ -407,7 +407,7 @@ p{
   text-transform: initial;
   letter-spacing: 1px;
 }
-#content-wrapper img{
+#content-wrapper img:nth-child(1){
   width:400px; 
   display:block;
   height:auto;
@@ -417,6 +417,15 @@ p{
   margin-right: auto; 
   margin-bottom:50px; 
   padding-top:23vh;
+}
+#content-wrapper img:nth-child(2){
+  /* width:80%; */
+  display:block;
+  height:auto;
+  position:static;
+  top:auto;
+  margin-left:auto;
+  margin-right: auto;
 }
 /*Footer*/
 footer {background-color: #191919;min-height:350px;font-family: 'Open Sans', sans-serif;}
@@ -508,8 +517,8 @@ footer {background-color: #191919;min-height:350px;font-family: 'Open Sans', san
          text-align: center;
      }
      #content-wrapper img{
-        width: auto !important;
-        height: 200px !important;
+        width: 100% !important;
+        /* height: 200px !important; */
         display: block;
         height: auto;
         position: static;
