@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Custom CSS-->
     <link rel="stylesheet" href="asset/css/custom.css">
+    <!-- Timetable CSS -->
+    <link rel="stylesheet" href="asset/css/timetablejs.css">
+
 </head>
 <div class="se-pre-con"></div>
 <body data-spy="scroll" data-target="#spyOnThis">
@@ -51,7 +54,7 @@
             <img src="asset/images/curve.svg">
             <div id="content-wrapper">
                 <!-- <h1>#Vistara<br> <b>Hackathon</b></h1> -->
-                <img src="asset/images/vh_logo.png" style="width:400px; display:block;height:auto;postion:static;top:auto; margin-left:auto; margin-right: auto; margin-bottom:50px; padding-top:23vh;">
+                <img src="asset/images/vh_logo.png">
                 <p>Change the world of hassle &amp; puzzled Airlines during a 30 hour hack, in which you’ll take air retailing to the next level.</p>
                 <button type="button" class="btn  btn-lg" data-toggle="modal" data-target="#register">Register</button>
             </div>
@@ -111,176 +114,44 @@ vestibulum non. Morbi laoreet ut nisl et malesuada. Morbi ornare facilisis velit
         </div>
     </div>
 
-    <!-- Timeline/Schedule -->
-    <div id="schedule">
-        <header class="cd-header">
-            <h1>DAY 1: SATURDAY, 23 SEPTEMBER 2017</h1>
-        </header>
+    <!-- Timeline Schedule -->
+    <div class="timetable container"></div>
+    <script src="asset/js/timetable.min.js"></script>
+    <script>
+      var timetable = new Timetable();
+      timetable.setScope(9,0)
+      timetable.addLocations(['Check In', 'Opening Ceremony', 'Hackathon', 'Lunch and Networking', 'Checkpoint 1', 'Dinner']);
+      timetable.addEvent('', 'Check In', new Date(2017,9,23,9,0), new Date(2017,9,23,10,0), '#');
+      timetable.addEvent('', 'Opening Ceremony', new Date(2017,9,23,10,0), new Date(2017,9,23,11,0), '#');
+      timetable.addEvent('', 'Hackathon', new Date(2017,9,23,11,0), new Date(2017,9,24,24,0), '#');
+      timetable.addEvent('', 'Lunch and Networking', new Date(2017,9,23,13,0), new Date(2017,9,23,14,0), '#');
+      timetable.addEvent('', 'Checkpoint 1', new Date(2017,9,23,19,0), new Date(2017,9,23,19,10), '#');
+      timetable.addEvent('', 'Dinner', new Date(2017,9,23,20,30), new Date(2017,9,23,22,30), '#');
+      var renderer = new Timetable.Renderer(timetable);
+      renderer.draw('.timetable');
+    </script>
 
-        <section id="cd-timeline" class="cd-container">
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-picture">
-                    <img src="http://jaarvisaccelerator.com/hack2solve/wp-content/uploads/2017/07/004-invitation.png" alt="Register">
-                </div> <!-- cd-timeline-img -->
+    <div class="timetable2 container"></div>
+    <script src="asset/js/timetable.min.js"></script>
+    <script>
+      var timetable2 = new Timetable();
+      timetable2.setScope(0,15)
+      timetable2.addLocations(['Hackathon', 'Midnight Snack', 'Checkpoint 2', 'Breakfast', 'Checkpoint 3', 'Final Submission', 'Lunch 2', 'Pitching and Final Result', 'Closing Ceremony']);
+      timetable2.addEvent('', 'Hackathon', new Date(2017,9,24,0,0), new Date(2017,9,24,11,00), '#');
+      timetable2.addEvent('', 'Midnight Snack', new Date(2017,9,24,0,30), new Date(2017,9,24,1,30), '#');
+      timetable2.addEvent('', 'Checkpoint 2', new Date(2017,9,24,2,0), new Date(2017,9,24,2,10), '#');
+      timetable2.addEvent('', 'Breakfast', new Date(2017,9,24,7,0), new Date(2017,9,24,8,0), '#');
+      timetable2.addEvent('', 'Checkpoint 3', new Date(2017,9,24,9,0), new Date(2017,9,24,9,10), '#');
+      timetable2.addEvent('', 'Final Submission', new Date(2017,9,24,11,0), new Date(2017,9,24,11,15), '#');
+      timetable2.addEvent('', 'Lunch 2', new Date(2017,9,24,12,0), new Date(2017,9,24,13,0), '#');
+      timetable2.addEvent('', 'Pitching and Final Result', new Date(2017,9,24,13,0), new Date(2017,9,24,15,0), '#');
+      timetable2.addEvent('', 'Closing Ceremony', new Date(2017,9,24,15,0), new Date(2017,9,24,16,0), '#');
+      var renderer = new Timetable.Renderer(timetable2);
+      renderer.draw('.timetable2');
+    </script>
 
-                <div class="cd-timeline-content">
-                    <h2>Check In &amp; Refreshments</h2>
-                    <span class="cd-date">09:00 AM</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
 
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-movie">
-                    <img src="http://jaarvisaccelerator.com/hack2solve/wp-content/uploads/2017/07/001-support.png" alt="Pitch">
-                </div> <!-- cd-timeline-img -->
-
-                <div class="cd-timeline-content">
-                    <h2>Opening</h2>
-                    <span class="cd-date">10:00 AM</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-picture">
-                    <img src="http://jaarvisaccelerator.com/hack2solve/wp-content/uploads/2017/07/002-work.png" alt="Work">
-                </div> <!-- cd-timeline-img -->
-
-                <div class="cd-timeline-content">
-                    <h2>Hack Starts</h2>
-                    <span class="cd-date">11:00 AM</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-location">
-                    <img src="http://jaarvisaccelerator.com/hack2solve/wp-content/uploads/2017/07/002-restaurant.png" alt="Lunch">
-                </div> <!-- cd-timeline-img -->
-
-                <div class="cd-timeline-content">
-                    <h2>Lunch with Networking</h2>
-                    <span class="cd-date">01:00 PM</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-location">
-                    <img src="http://jaarvisaccelerator.com/hack2solve/wp-content/uploads/2017/07/003-marketing.png" alt="Checkpoint">
-                </div> <!-- cd-timeline-img -->
-
-                <div class="cd-timeline-content">
-                    <h2>1st Checkpoint</h2>
-                    <span class="cd-date">07:00 PM</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-location">
-                    <img src="http://jaarvisaccelerator.com/hack2solve/wp-content/uploads/2017/07/003-chicken.png" alt="Dinner">
-                </div> <!-- cd-timeline-img -->
-
-                <div class="cd-timeline-content">
-                    <h2>Dinner</h2>
-                    <span class="cd-date">08:30 PM</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-        </section>
-
-        <header class="cd-header">
-            <h1>DAY 2: SUNDAY, 24 SEPTEMBER 2017</h1>
-        </header>
-
-        <section id="cd-timeline" class="cd-container">
-
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-picture">
-                    <img src="http://jaarvisaccelerator.com/hack2solve/wp-content/uploads/2017/07/digital-clock-midnight.png" alt="Midnight">
-                </div> <!-- cd-timeline-img -->
-
-                <div class="cd-timeline-content">
-                    <h2>Midnight Snacks</h2>
-                    <span class="cd-date">12:30 AM</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-location">
-                    <img src="http://jaarvisaccelerator.com/hack2solve/wp-content/uploads/2017/07/003-meeting.png" alt="Activities">
-                </div> <!-- cd-timeline-img -->
-
-                <div class="cd-timeline-content">
-                    <h2>2nd Checkpoint</h2>
-                    <span class="cd-date">02:00 AM</span>
-                </div> <!-- chttp://jaarvisaccelerator.com/hack2solve/wp-content/uploads/2017/07/001-lemonade.pngd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-movie">
-                    <img src="http://jaarvisaccelerator.com/hack2solve/wp-content/uploads/2017/07/003-chicken.png" alt="Breakfast">
-                </div> <!-- cd-timeline-img -->
-
-                <div class="cd-timeline-content">
-                    <h2>Breakfast</h2>
-                    <span class="cd-date">07:00 AM</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-location">
-                    <img src="http://jaarvisaccelerator.com/hack2solve/wp-content/uploads/2017/07/003-marketing.png" alt="Checkpoint">
-                </div> <!-- cd-timeline-img -->
-
-                <div class="cd-timeline-content">
-                    <h2>3rd Checkpoint</h2>
-                    <span class="cd-date">09:00 AM</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-picture">
-                    <img src="http://jaarvisaccelerator.com/hack2solve/wp-content/uploads/2017/07/002-fireworks.png" alt="Final Submission">
-                </div> <!-- cd-timeline-img -->
-
-                <div class="cd-timeline-content">
-                    <h2>Final Submission</h2>
-                    <span class="cd-date">11:00 AM</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-location">
-                    <img src="http://jaarvisaccelerator.com/hack2solve/wp-content/uploads/2017/07/002-restaurant.png" alt="Lunch">
-                </div> <!-- cd-timeline-img -->
-
-                <div class="cd-timeline-content">
-                    <h2>Lunch</h2>
-                    <span class="cd-date">12:00 PM</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-location">
-                    <img src="http://jaarvisaccelerator.com/hack2solve/wp-content/uploads/2017/07/001-support.png" alt="Pitch">
-                </div> <!-- cd-timeline-img -->
-
-                <div class="cd-timeline-content">
-                    <h2>Pitching and Final Results</h2>
-                    <span class="cd-date">01:00 PM</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-location">
-                    <img src="http://jaarvisaccelerator.com/hack2solve/wp-content/uploads/2017/07/001-fire-gear.png" alt="Closing Ceremony">
-                </div> <!-- cd-timeline-img -->
-
-                <div class="cd-timeline-content">
-                    <h2>Closing Ceremony</h2>
-                    <span class="cd-date">03:00 PM</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-        </section> <!-- cd-timeline -->
-    </div>
-
+ 
     <!--Rules and Regulation-->
     <div id="rules">
         <div class="container">
