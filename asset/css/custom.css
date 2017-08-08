@@ -329,7 +329,7 @@ h3{
     width: calc(100% - 420px);
     display: inline-block;
 }
-#problem-statement{
+#challenges{
     text-align: center;
     background-image: url(../images/problem-bg.jpg);
     background-size: cover;
@@ -338,10 +338,10 @@ h3{
     padding: 150px 0;
     text-shadow: 2px 2px 3px #000;
 }
-#problem-statement h3{
+#challenges h3{
     color: #fff;
 }
-#problem-statement p{
+#challenges p{
     color: #fff;
     font-size: 20px;
 }
@@ -352,7 +352,7 @@ p{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
-#problem-statement h2{
+#challenges h2{
     font-size: 28px;
     text-align: center;
     font-weight: 200;
@@ -380,6 +380,7 @@ p{
     padding: 25px 0;
     color: #191919;
     text-align: center;
+    border-bottom: 1px solid #353535;
 }
 
 .contact_info{
