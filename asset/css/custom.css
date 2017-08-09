@@ -183,7 +183,7 @@ body {
 }
 
 .affix a {
-    color: #501c4b !important;
+    color: #142d4a !important;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
@@ -199,8 +199,8 @@ body {
 }
 .affix #registration-btn{
   display: inline-block;
-  color: #57204a;
-  border: 1px solid #57204a !important;
+  color: #142d4a;
+  border: 1px solid #142d4a !important;
 }
 .navbar-brand img{display: none;}
 .navbar button#registration-btn{
@@ -303,7 +303,7 @@ body {
 }
 h3{
     font-size: 38px;
-    color: #57204a;
+    color: #142d4a;
     text-transform: uppercase;
     letter-spacing: -2px;
     font-weight: 800;
@@ -402,7 +402,7 @@ p{
 .contact_info .icon{
   width: 90px;
   height: 90px;
-  border: 2px solid #f74949;
+  border: 2px solid #2ed7f8;
   color: white;
   font-size: 2em;
   padding-top: 20px;
