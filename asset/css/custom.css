@@ -140,9 +140,9 @@ body {
         color: #57204a;;
     }
     .navbar button#registration-btn {
-         color: #57204a; 
-        border: 1px solid #57204a !important;
-        width: 100% !important;
+         color: #142d4a;
+         border: 1px solid #142d4a !important;
+         width: 100% !important;
     }
     .navbar-nav {
         width: 100% !important;
@@ -1052,4 +1052,57 @@ Main components
     text-transform: uppercase;
     outline: 0;
     font-size: 11px;
+}
+
+#date-fort{
+  width:60%; 
+  margin-top: 20px; 
+  margin-bottom: 30px;
+}
+@media(max-width:1024px){
+  #date-fort{
+    width: 80%;
+  }
+}
+@media(max-width:520px){
+  #date-fort{
+    width: 100%;
+  }
+}
+
+
+.time{
+  width: 100%;
+  /* height: 150px; */
+  background-color:#dedede;
+  color:#000;
+  border-radius: 5px;
+  padding: 20px;
+}
+.hack-11 p{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: lighter;
+  font-size: 30px;
+  margin: 0;
+  display: inline-block;
+}
+.t-bold{
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  float: right;
+  display: inline-block;
+  vertical-align: -webkit-baseline-middle;
+}
+.t-bold h4{
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 0;
+  margin-left: 10px !important;
+  display: inline-block;
+  margin: 0;
+  vertical-align: -webkit-baseline-middle;
 }
