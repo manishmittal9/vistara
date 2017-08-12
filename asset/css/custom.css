@@ -339,7 +339,7 @@ h3{
     width: calc(100% - 420px);
     display: inline-block;
 }
-#challenges{
+#tagline{
     text-align: center;
     background-image: url(../images/problem-bg.jpg);
     background-size: cover;
@@ -348,16 +348,10 @@ h3{
     padding: 80px 0;
     text-shadow: 2px 2px 3px #000;
 }
-#challenges img{
+#tagline img{
   width:65%;
 }
-/* #challenges h3{
-    color: #fff;
-}
-#challenges p{
-    color: #fff;
-    font-size: 20px;
-} */
+
 p{
     font-size: 14px;
     letter-spacing: 0.5px;
@@ -365,20 +359,7 @@ p{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
-/* #challenges h2{
-    font-size: 28px;
-    text-align: center;
-    font-weight: 200;
-    display: inline-block;
-    letter-spacing:-0.9px;
-    line-height: 35px;
-    background-color: #fff;
-    padding: 8px 30px;
-    color: #000;
-    border-radius: 20px;
-    margin: 5px 5px;
-    text-shadow: initial;
-} */
+
 #rules{
     text-align: center;
     background-color: #efefef;
@@ -543,10 +524,10 @@ footer {background-color: #191919;min-height:350px;font-family: 'Open Sans', san
         margin-bottom: 36px;
         padding-top: 19vh;
      }
-      #challenges{
+      #tagline{
         padding: 30px 0;
       }
-      #challenges img{
+      #tagline img{
         width:100%;
       }
       #time{
@@ -1156,6 +1137,33 @@ Main components
   color: #fff;
   margin-top: 50px;
 }
+
+.prob{
+  width: 23.6% !important;
+  display: inline-table;
+  padding: 30px 0;
+}
+.prob img{
+  width: 35%;
+}
+.prob p{
+  padding: 10px 0;
+  text-transform: uppercase;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.prob h5{
+  color: #adadad;
+  font-size: 12px;
+  line-height: 14px;
+  /* margin-top: -16px; */
+  font-weight: 400;
+  border-top: 2px solid #2ed7f8;
+  letter-spacing: 0.3px;
+  margin: auto 34px;
+  padding-top: 5px;
+}
+
 @media(max-width:990px){
   .hack-12{
     width:23.2% !important;
@@ -1178,6 +1186,11 @@ Main components
   }
   .time{
     height: auto;
+  }
+  .prob{
+    width: 48% !important;
+    display: inline-table;
+    padding: 20px 0;
   }
 }
 
@@ -1209,4 +1222,26 @@ Main components
   margin-top: 3px;
   border: 1px solid #000;
   width: auto;
+}
+#challenge{
+  padding:70px 0px;
+  text-align: center;
+
+}
+@media(max-width:305px){
+  .prob{
+    width: 90% !important;
+  }
+}
+#filler{
+  background-color: #404040;
+}
+#filler img{
+  width:70%;
+  padding-bottom: 50px; 
+}
+#pre-filler img{
+  width:70%;
+  margin-bottom: -1px;
+  
 }
