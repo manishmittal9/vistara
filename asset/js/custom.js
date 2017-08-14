@@ -29,7 +29,3 @@ $(document).ready(function(){
   });
 });
 $('#spyOnThis').scrollspy();
-
-
-
-
