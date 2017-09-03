@@ -1807,7 +1807,7 @@ html.touch .links a.tap {
 
 .user-fixed{
   position: fixed;
-  margin-top: -100vh;
+  /* margin-top: -100vh; */
   background-color: #142d4a;
   z-index: 99999;
   /* box-shadow: 0px 0px 5px rgba(0,0,0,0.5); */
