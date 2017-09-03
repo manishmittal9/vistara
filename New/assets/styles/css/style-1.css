@@ -1139,14 +1139,18 @@ header h1 {
 
 .faqHeader {
     font-size: 20px;
-    margin: 20px;
-    margin-left: 0
+    margin: 46px 0 10px 0;
+    margin-left: 0;
+    text-align: left;
+    font-weight: 900;
 }
 
 .panel-group p {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 22px;
-    text-align: justify
+    text-align: justify;
+    letter-spacing: 0.5px;
+    word-spacing: 4px;
 }
 
 .panel-heading [data-toggle="collapse"]:after {
@@ -1287,4 +1291,7 @@ header h1 {
     .hanger.position-5 {
         top: -10vh !important;
     }
+}
+#accordian li{
+    
 }
