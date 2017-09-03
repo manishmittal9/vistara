@@ -1,0 +1,588 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Vistara Hackathon</title>
+
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	
+		
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="assets/styles/css/style-1.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/styles/css/styles.css"/>
+	
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/icon.png" type="image/png">
+	
+	<!--Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+	.typeform-popup-wrapper.typeform-popup-mode-popup .typeform-close-icon {
+		top: -34px;
+		right: -34px;
+		opacity: 0;
+	}
+	.typeform-popup-wrapper.typeform-popup-mode-popup {
+		visibility: hidden;
+		opacity: 0;
+		width: 100vw !important;
+		height: 100vh !important;
+		top: 0px !important;
+		left: 0px !important;
+		transition: opacity .3s ease-out;
+	}
+	.typeform-popup-wrapper.typeform-popup-mode-popup .typeform-close-icon {
+		top: 10px !important;
+		right: 10px !important;
+		height: 60px !important;
+		width: 60px !important;
+		z-index: 100009 !important;
+		opacity: 1 !important;
+		/* box-shadow: 1px 1px 5px #000; */
+	}
+	.typeform-close qa-close-button-mobile span{
+		background-color:#000 !important;
+	}
+	.typeform-modal .typeform-close span {
+		border-radius: 0 !important;
+		display: block !important;
+		height: 3px !important;
+		width: 40px !important;
+		position: absolute !important;
+		right: 12px !important;
+		top: 21px !important;
+	}
+	.typeform-modal .typeform-close {
+		position: absolute;
+		z-index: 1001;
+		top: 0;
+		right: 0;
+		font-size: 20px;
+		font-family: sans-serif;
+		width: 68px !important;
+		height: 67px !important;
+		background-color: #142d4a !important;
+	}
+	</style>
+
+
+</head>
+<body>
+	<div id="container" class="wrapper">
+		<ul id="scene" class="scene unselectable"
+			data-friction-x="0.1"
+			data-friction-y="0.1"
+			data-scalar-x="25"
+			data-scalar-y="15">
+			<li class="layer" data-depth="0.00"></li>
+			<li class="layer" data-depth="0.10"><div class="background"></div></li>
+			<li class="layer" data-depth="0.10"><div class="light orange b phase-4"></div></li>
+			<li class="layer" data-depth="0.10"><div class="light purple c phase-5"></div></li>
+			<li class="layer" data-depth="0.10"><div class="light orange d phase-3"></div></li>
+			<!-- <li class="layer" data-depth="0.15">
+				<ul class="rope depth-10">
+					<li><img src="assets/images/rope.png" alt="Rope"></li>
+					<li class="hanger position-2">
+						<div class="board cloud-2 swing-1"></div>
+					</li>
+					<li class="hanger position-4">
+						<div class="board cloud-1 swing-3"></div>
+					</li>
+					<li class="hanger position-8">
+						<div class="board birds swing-5"></div>
+					</li>
+				</ul>
+			</li> -->
+			
+			<li class="layer" data-depth="0.20"><h1 class="title" style="text-transform:uppercase;">Hackathon<p class="title-p">India's Largest Aviation Hackathon</p></h1></li>
+			<li class="layer" data-depth="0.20">
+				<ul class="rope">
+					<!-- <li><img src="assets/images/rope.png" alt="Rope"></li> -->
+					<li class="hanger position-1">
+						<div class="board cloud-1 "></div>
+					</li>
+					<li class="hanger position-5">
+						<div class="board cloud-4 "></div>
+					</li>
+				</ul>
+			</li>
+			<li class="layer" data-depth="0.30"><div class="wave paint depth-30"></div></li>
+			<li class="layer" data-depth="0.40"><div class="wave plain depth-40"></div></li>
+			<li class="layer" data-depth="0.50"><div class="wave paint depth-50"></div></li>
+			<li class="layer" data-depth="0.30">
+				<!-- <ul class="rope depth-80">
+					<li><img src="assets/images/rope.png" alt="Rope"></li>
+					<li class="hanger position-3">
+						<div class="board birds swing-5"></div>
+					</li>
+					<li class="hanger position-6">
+						<div class="board cloud-2 swing-2"></div>
+					</li>
+					<li class="hanger position-8">
+						<div class="board cloud-2 swing-4"></div>
+					</li>
+				</ul> -->
+			</li>
+			<li class="layer" data-depth="0.60"><div class="wave plain depth-60"></div></li>
+			<li class="layer" data-depth="0.80"><div class="wave plain depth-80"></div></li>
+			<li class="layer" data-depth="1.00"><div class="wave paint depth-100"></div></li>
+		</ul>
+	</div>
+
+
+
+	<!-- fixed -->
+	<div class="user-fixed">
+		<div class='hamburger'>
+			<div class='line'></div>
+			<div class='line'></div>
+			<div class='line' style="margin-bottom:0;"></div>
+			
+		</div>
+
+		<div class='menu'>
+			<a href="http://incubateind.com" target="_blank"><div class='menu-item'>Home</div></a>
+			<a href="#about"><div class='menu-item'>About</div></a>
+			<a href="#challenge"><div class='menu-item'>Challenges</div></a>
+			<a href="#time"><div class='menu-item'>Agenda</div></a>
+			<a href="faq.html" target="_blank"><div class='menu-item'>Rules & FAQ</div></a>
+			<a href="#contact"><div class='menu-item'>Contact</div></a>
+		</div>
+	</div>
+	<div style="position:fixed; top:0px; left:0px;  z-index:100004; background-color:#f7f7f7; box-shadow:0px 0px 5px rgba(0,0,0,0.5); height:67px;"><img src="assets/images/alt-logo.png" id="fixed-logo"></div>
+	<a class="typeform-share button" href="https://smartcityincubateind.typeform.com/to/pFErVH" data-mode="popup" target="_blank">
+		<div id="regedit">
+			<span>Register Here</span>
+			<span class="fa fa-pencil"></span>
+		</div>
+	</a>
+	<script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+
+
+	<!--About-->
+    <div class="container" id="about">
+		<h3>About the hack</h3>
+		<hr class="head-line">
+		<p>
+			The<span class="about-bold">Vistara Hackathon</span>in partnership with<span class="about-bold">IncubateIND</span>, brings India's Largest Aviation Hackathon and takes you on a new voyage of the hack with talented teams of developers, designers, and data scientists that blend innovation with creativity and construct solutions out of it, making your experience peerless
+			and one of a kind. Team up with us on this unique and exciting journey on the same day, at the same time in two cities <span class="about-bold">(Delhi and Bengaluru)</span> on <span class="about-bold">October 7<sup>th</sup> to 8<sup>th</sup></span>.
+		</p>
+		<img id="date-fort" src="assets/images/date_creative.png">
+	</div>
+
+
+
+
+
+	<!-- Information -->
+	<div class="container-fluid">
+		<div class="info-hack" style="height:215px;">
+			<div class="col-sm-4 info-row" >
+				<h4>Registration From</h4>
+				<p>24<sup>th</sup> August 2017 - 25<sup>th</sup> September 2017</p>
+			</div>
+			<div class="col-sm-4 info-row" style="background-color:#4b6794;" >
+				<h4>Hackathon Day</h4>
+				<p>7<sup>th</sup> - 8<sup>th</sup> October 2017</p>
+			</div>
+			<div class="col-sm-4 info-row">
+				<h4>Simultaneously at</h4>
+				<p>Delhi NCR and Bengaluru</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- Problem Statement -->
+    <div id="challenge">
+        <div class="container">
+            <h3>Hack Challenges</h3>
+            <hr class="head-line">
+            <p style="margin-bottom:30px;">Change the world of hassle &amp; puzzled Airlines during a 30 hour hack, in which you’ll take air retailing to the next level. You can explore the area of your choice from any of the eight categories mentioned below</p>
+            
+
+            <div class="prob">
+                <img src="assets/images/global.svg">
+				<p>The Business Travel Journey</p>
+				<!-- <h5> Loreum Ipsum Demaroniskes Lisa Tie meigjz.</h5> -->
+            </div>
+            <div class="prob">
+                <img src="assets/images/cloud-computing.svg">
+                <p>The Data Travel</p>
+				<!-- <h5> Loreum Ipsum Demaroniskes Lisa Tie meigjz.</h5> -->
+            </div>
+            <div class="prob">
+                <img src="assets/images/planning.svg">
+                <p>Customers Survey Complaints</p>
+				<!-- <h5> Loreum Ipsum Demaroniskes Lisa Tie meigjz.</h5> -->
+            </div>
+            <div class="prob">
+                <img src="assets/images/operator.svg">
+                <p>Customers Experience</p>
+				<!-- <h5> Loreum Ipsum Demaroniskes Lisa Tie meigjz.</h5> -->
+            </div>
+            <div class="prob">
+                <img src="assets/images/airplane.svg">
+                <p>Travel and Tourism</p>
+				<!-- <h5> Loreum Ipsum Demaroniskes Lisa Tie meigjz.</h5> -->
+            </div>
+            <div class="prob">
+                <img src="assets/images/api.svg">
+                <p>Software and API</p>
+				<!-- <h5> Loreum Ipsum Demaroniskes Lisa Tie meigjz.</h5> -->
+            </div>
+            <div class="prob">
+                <img src="assets/images/artificial-intelligence.svg">
+                <p>IOT/Robotics</p>
+				<!-- <h5> Loreum Ipsum Demaroniskes Lisa Tie meigjz.</h5> -->
+            </div>
+            <div class="prob">
+                <img src="assets/images/market.svg">
+                <p>Marketing</p>
+				<!-- <h5> Loreum Ipsum Demaroniskes Lisa Tie meigjz.</h5> -->
+            </div>
+        
+        </div>
+    </div>
+
+
+
+
+
+	<!--Tagline-->
+    <div id="tagline" style="background-image:url(assets/images/problem-bg.jpg);">
+        <div class="container">
+           <img src="assets/images/aviation.png" class="center-block" >
+        </div> 
+    </div>
+
+
+
+
+
+	<!-- Schedule -->
+    <div id="time">
+        <div class="container">
+            <h3>Schedule</h3>
+			<hr class="head-line">
+			<p style="margin-bottom:30px; font-size: 16px; letter-spacing: 1.2px; line-height: 28px;">Change the world of hassle &amp; puzzled Airlines during a 30 hour hack, in which you’ll take air retailing to the next level. You can explore the area of your choice from any of the eight categories mentioned below</p>
+            <div class="time hack-11">
+                <p>30 Hour Hackathon</p>
+            </div>
+            <div class="time hack-12">
+                <p> Check In 
+                    
+                </p>
+                <img src="assets/images/clock.svg">
+                <span class="time-hack">09:00 AM</span>
+            </div>
+            <div class="time hack-12">
+                <p> Opening Ceremony 
+                    
+                </p>
+                <img src="assets/images/clock.svg">
+                <span class="time-hack">10:00 AM</span>
+            </div>
+            <div class="time hack-12">
+                <p> Hack Begins 
+                    
+                </p>
+                <img src="assets/images/clock.svg">
+                <span class="time-hack">11:00 AM</span>
+            </div>
+            <div class="time hack-12">
+                <p> Networking over Lunch
+                    
+                </p>
+                <img src="assets/images/clock.svg">
+                <span class="time-hack">01:00 PM</span>
+            </div>
+            <div class="time hack-12">
+                <p> Checkpoint 1
+                    
+                </p>
+                <img src="assets/images/clock.svg">
+                <span class="time-hack">07:00 PM</span>
+            </div>
+            <div class="time hack-12">
+                <p> Dinner
+                    
+                </p>
+                <img src="assets/images/clock.svg">
+                <span class="time-hack">08:30 PM</span>
+            </div>
+            <div class="time hack-12">
+                <p> Midnight Snack
+                    
+                </p>
+                <img src="assets/images/clock.svg">
+                <span class="time-hack">00:30 AM</span>
+            </div>
+            <div class="time hack-12">
+                <p> Checkpoint 2
+                    
+                </p>
+                <img src="assets/images/clock.svg">
+                <span class="time-hack">02:00 AM</span>
+            </div>
+            <div class="time hack-12">
+                <p> Breakfast
+                    
+                </p>
+                <img src="assets/images/clock.svg">
+                <span class="time-hack">08:00 AM</span>
+            </div>
+            <div class="time hack-12">
+                <p> Final Submission
+                    
+                </p>
+                <img src="assets/images/clock.svg">
+                <span class="time-hack">11:30 AM</span>
+            </div>
+            <div class="time hack-12">
+                <p> Lunch
+                    
+                </p>
+                <img src="assets/images/clock.svg">
+                <span class="time-hack">12:30 PM</span>
+			</div>
+			<div class="time hack-12">
+				<p> Pitching Sessions
+					
+				</p>
+				<img src="assets/images/clock.svg">
+				<span class="time-hack">01:30 PM</span>
+			</div>
+			<div class="time hack-12">
+				<p> Closing Ceremony
+					
+				</p>
+				<img src="assets/images/clock.svg">
+				<span class="time-hack">03:00 PM</span>
+			</div>
+        </div>      
+	</div>
+
+
+	<!-- Prizes -->
+	<div class="prize">
+		<div class="container">
+				<h3>Prizes worth <span class="fa fa-rupee"></span> Lakhs</h3>
+				<hr class="head-line" style="border:0;">
+			<div class="col-sm-12">
+				<img src="assets/images/prize.png" class="center-block">
+			</div>
+			<div class="col-sm-12" >
+				<h3>Hiring Opportunity from</h3>
+				<hr class="head-line" style="border:0;">
+				<h1>Vistara and Amazon</h1>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- Venue -->
+	<div class="venue ">
+		<div class="container">
+			<h3>Venue</h3>
+			<hr class="head-line">
+			<p style="margin-bottom:30px; font-size: 16px; letter-spacing: 1.2px; line-height: 28px;">Change the world of hassle &amp; puzzled Airlines during a 30 hour hack, in which you’ll take air retailing to the next level. You can explore the area of your choice from any of the eight categories mentioned below</p>
+		</div>
+		<div class="photo">
+			<div class="row">
+				<div class="col-sm-4 ph-img"></div>
+				<div class="col-sm-4 ph-img"></div>
+				<div class="col-sm-4 ph-img"></div>
+				<div class="col-sm-4 ph-img"></div>
+				<div class="col-sm-4 ph-img"></div>
+				<div class="col-sm-4 ph-img"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="partners" class="container">
+		<div class="col-sm-4">
+			<img src="assets/images/aws.png" class="center-block">
+		</div>
+		<div class="col-sm-4">
+			<img src="assets/images/adobe.png" class="center-block">
+		</div>
+		<div class="col-sm-4">
+			<img src="assets/images/kstart.png" class="center-block">
+		</div>
+		<!-- <div class="col-sm-3">
+			<img src="assets/images/aws.png">
+		</div> -->
+	</div>
+
+
+	<footer id="contact">
+			<div class="container">
+				<div class="row">
+				<div class="col-md-3 col-sm-6 footer-col">
+					<div class="logofooter"> <img src="assets/images/footer-logo.png" style="width:100%;"></div>
+					<p>Vistara Hackathon is a 30-hour non-stop event to generate ideas and solutions that'll change the Aviation industry, an initiative by Vistara.</p>
+					<div>
+						<ul class="footer-social">
+							<li><a href="https://www.instagram.com/vistarahackathon" target="_blank"><i class="fa fa-instagram social-icon instagram" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.facebook.com/vistarahackathon/" target="_blank"><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></a></li>
+							<li><a href="https://twitter.com/vistarahack" target="_blank"><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></a></li>
+							
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-md-3 col-sm-6 footer-col text-center">
+					<h6 class="heading7">Quicklinks</h6>
+					<ul class="footer-ul">
+						<li><a href="#about"> About</a></li>
+						<li><a href="#challenges">Challenges</a></li>
+						<li><a href="#schedule">Agenda</a></li>
+						<li><a href="faqs.html"> Rules</a></li>
+						<li><a href="faqs.html"> FAQs</a></li>
+						<li><a href="#contact"> Contact Us</a></li>
+						<li><a href="tnc.html"> Terms and Condition</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6 footer-col">
+					<h6 class="heading7">Latest Post</h6>
+					<div class="post">
+					<p>Apply for @draper_u Fall Hero Program in #SiliconValley  
+							http://www.draperuniversity.com/apply 
+							#Fall_2017 @BabuBeg #Entrepreneurship #startups  <span>August 12,2017</span></p>
+					<p>30 hours #Hack2Solve #Fintech #Hackathon summed up under 60 seconds !
+							@JaspalSarai @IncubateIND @ecell_imtg @samjoy10 @arvindvarryan <span>August 1,2017</span></p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 footer-col" >
+					<div>
+						<p>Powered By: </p>
+						<img src="assets/images/IncubateIND.png" class="img-responsive">
+						<p style="margin-top:10px;">IncubateIND provides a central platform for all generations of explorers to discover, build and work together to solve world’s greatest problems through technology.</p>
+					</div>
+					<ul class="footer-social">
+					<li><a href="https://www.linkedin.com/company-beta/13218268/" target="_blank"><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.facebook.com/IncubateIND" target="_blank"><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></a></li>
+					<li><a href="https://twitter.com/incubateind" target="_blank"><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.instagram.com/incubateindia/" target="_blank"><i class="fa fa-instagram social-icon instagram" aria-hidden="true"></i></a></li>
+					</ul>
+					<br><br><br>
+					
+				</div>
+				</div>
+			</div>
+		</footer>
+		<!--footer start from here-->
+	
+		<div class="copyright">
+		<div class="container">
+			<div class="col-md-6">
+			<p>© 2017 INCUBATEIND</p>
+			</div>
+		</div>
+		</div>
+
+	
+			
+
+
+	<!-- Scripts -->
+	<script src="assets/scripts/js/libraries.min.js"></script>
+    <script src="deploy/jquery.parallax.js"></script>
+	<script>
+
+	// jQuery Selections
+	var $html = $('html'),
+			$container = $('#container'),
+			$prompt = $('#prompt'),
+			$toggle = $('#toggle'),
+			$about = $('#about'),
+			$scene = $('#scene');
+
+	// Hide browser menu.
+	(function() {
+		setTimeout(function(){window.scrollTo(0,0);},0);
+	})();
+
+	// Setup FastClick.
+	FastClick.attach(document.body);
+
+	// Add touch functionality.
+	if (Hammer.HAS_TOUCHEVENTS) {
+		$container.hammer({drag_lock_to_axis: true});
+		_.tap($html, 'a,button,[data-tap]');
+	}
+
+	// Add touch or mouse class to html element.
+	$html.addClass(Hammer.HAS_TOUCHEVENTS ? 'touch' : 'mouse');
+
+	// Resize handler.
+	(resize = function() {
+		$scene[0].style.width = window.innerWidth + 'px';
+		$scene[0].style.height = window.innerHeight + 'px';
+		if (!$prompt.hasClass('hide')) {
+			if (window.innerWidth < 600) {
+				$toggle.addClass('hide');
+			} else {
+				$toggle.removeClass('hide');
+			}
+		}
+	})();
+
+	// Attach window listeners.
+	window.onresize = _.debounce(resize, 200);
+	window.onscroll = _.debounce(resize, 200);
+
+	function showDetails() {
+		$about.removeClass('hide');
+		$toggle.removeClass('i');
+	}
+
+	function hideDetails() {
+		$about.addClass('hide');
+		$toggle.addClass('i');
+	}
+
+	// Listen for toggle click event.
+	$toggle.on('click', function(event) {
+		$toggle.hasClass('i') ? showDetails() : hideDetails();
+	});
+
+	// Pretty simple huh?
+	$scene.parallax();
+
+	// Check for orientation support.
+	setTimeout(function() {
+		if ($scene.data('mode') === 'cursor') {
+			$prompt.removeClass('hide');
+			if (window.innerWidth < 600) $toggle.addClass('hide');
+			$prompt.on('click', function(event) {
+				$prompt.addClass('hide');
+				if (window.innerWidth < 600) {
+					setTimeout(function() {
+						$toggle.removeClass('hide');
+					},1200);
+				}
+			});
+		}
+	},1000);
+	</script>
+
+</body>
+</html>
