@@ -322,7 +322,7 @@ button {
 .scene {
   min-height: 460px;
   position: relative;
-  overflow: hidden; }
+  /*overflow: hidden; */}
 
 .layer {
   position: absolute; }

@@ -291,15 +291,16 @@ body {
 
 
 
-#about .col-sm-4 h3{
+#about h1{
     font-size: 24px;
     color: #57204a;
     text-transform: uppercase;
-    letter-spacing: -2px;
+    letter-spacing: 6px;
     margin-bottom: 20px;
     font-family: 'Open Sans', sans-serif;
 }
-h3{
+
+h2{
     font-size: 23px;
     color: #142d4a;
     text-transform: uppercase;
@@ -410,7 +411,7 @@ p{
   top:auto; 
   margin-left:auto; 
   margin-right: auto; 
-  margin-bottom:50px; 
+  margin-bottom: 20px; 
   padding-top:23vh;
 }
 #content-wrapper img:nth-child(2){
@@ -431,7 +432,7 @@ footer {background-color: #191919;min-height:350px;font-family: 'Open Sans', san
 .footer-col p i { width:20px; color:#999;}
 
 .footer-ul {list-style-type:none;padding-left:0;margin-left:2px;text-align: left;}
-.footer-ul li {line-height:29px;font-size:12px;text-align: left;padding: 0px 16px;display: inline-block;margin: 3px 0;background-color: #4c4c4c;border-radius: 20px;color: #000;}
+.footer-ul li {line-height:29px;font-size:12px;text-align: left;padding: 0px 16px;display: block;letter-spacing: 5px; text-transform: uppercase;margin: 3px 0;background-color: #4c4c4c;color: #000;}
 .footer-ul li a {color: #ffffff;/* transition: color 0.2s linear 0s, background 0.2s linear 0s; */}
 .footer-ul i { margin-right:10px;}
 .footer-ul li a:hover {/* transition: color 0.2s linear 0s, background 0.2s linear 0s; *//* color:#ff670f; */}
@@ -1148,6 +1149,7 @@ Main components
 }
 .prob p{
   padding: 10px 0;
+  font-weight: bolder;
   text-transform: uppercase;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -1244,4 +1246,106 @@ Main components
   width:70%;
   margin-bottom: -1px;
   
+}
+
+@media(min-width:768px;
+) {
+    modal-body {
+        height: 98vh;
+    }
+}
+.info-row{
+    background-color: #384c6b;
+    transition: 0.2s all;
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+}
+.info-hack h4{
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 2vh;
+}
+.info-hack p{
+    font-size: 24px !important;
+    letter-spacing: 1px !important;
+    font-weight: 700  !important;
+    margin-top: -2px !important;
+}
+.container-fluid{
+    padding: 0px !important;
+}
+.venue{
+    background-color: #fff;
+    padding: 70px 0 0 0;
+}
+.venue .col-sm-6{
+    padding: 0;
+}
+.photo{
+    
+}
+
+.ph-img{
+    height:320px;
+    background-position: center;
+    background-size: cover;
+}
+.photo .ph-img:nth-child(1){
+    background-image: url(../images/1.jpg);
+}
+.photo .ph-img:nth-child(2){
+    background-image: url(../images/2.jpg);
+}
+.photo .ph-img:nth-child(3){
+    background-image: url(../images/3.jpg);
+}
+.photo .ph-img:nth-child(4){
+    background-image: url(../images/4.jpg);
+}
+.photo .ph-img:nth-child(5){
+    background-image: url(../images/5.jpg);
+}
+.photo .ph-img:nth-child(6){
+    background-image: url(../images/6.jpg);
+}
+#partners{
+    background-color: #fff;
+    padding: 25px !important;
+    text-align: center;
+}
+#partners img{
+    width: 70%;
+}
+
+.prize{
+  background-image: url(../images/prize-bg.jpg);
+  background-size: cover;
+  padding: 120px 0;
+  background-position: center;
+  color:#fff;
+}
+.prize img{
+  width:100%;
+  padding: 20px;
+}
+.prize h2{
+  color: #fff;
+}
+
+#partners h4{
+  margin-bottom: -15px;
+  text-transform: uppercase;
+  font-size: 16px; 
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px){
+  #date-fort {
+      display: none;
+  }
 }
