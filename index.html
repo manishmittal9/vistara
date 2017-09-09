@@ -12,8 +12,14 @@
 
     <link rel="icon" href="asset/images/icon.png">
 
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/styles/css/styles.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/css/style-1.css"/>
     
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,9 +27,133 @@
     <!--Custom CSS-->
     <link rel="stylesheet" href="asset/css/custom.css">
     <link rel="stylesheet" type="text/css" href="asset/css/modernizr.min.css">
+
+    <style>
+        .typeform-popup-wrapper.typeform-popup-mode-popup .typeform-close-icon {
+            top: -34px;
+            right: -34px;
+            opacity: 0;
+        }
+        .typeform-popup-wrapper.typeform-popup-mode-popup {
+            visibility: hidden;
+            opacity: 0;
+            width: 100vw !important;
+            height: 100vh !important;
+            top: 0px !important;
+            left: 0px !important;
+            transition: opacity .3s ease-out;
+        }
+        .typeform-popup-wrapper.typeform-popup-mode-popup .typeform-close-icon {
+            top: 10px !important;
+            right: 10px !important;
+            height: 60px !important;
+            width: 60px !important;
+            z-index: 100009 !important;
+            opacity: 1 !important;
+            /* box-shadow: 1px 1px 5px #000; */
+        }
+        .typeform-close qa-close-button-mobile span{
+            background-color:#000 !important;
+        }
+        .typeform-modal .typeform-close span {
+            border-radius: 0 !important;
+            display: block !important;
+            height: 3px !important;
+            width: 40px !important;
+            position: absolute !important;
+            right: 12px !important;
+            top: 21px !important;
+        }
+        .typeform-modal .typeform-close {
+            position: absolute;
+            z-index: 1001;
+            top: 0;
+            right: 0;
+            font-size: 20px;
+            font-family: sans-serif;
+            width: 68px !important;
+            height: 67px !important;
+            background-color: #142d4a !important;
+        }
+        .typeform-share{
+            padding: 0px !important;
+            margin: 0px  !important;
+            height: 0px  !important;
+        }
+        .collapseing {
+            display: block;
+            height: auto !important;
+        }
+        
+        .navbar-default .navbar-nav>li>a {
+            color: #777;
+            margin: 10px 0;
+            display: inline-grid;
+        }
+        .navbar-brand{
+            width: 200px;
+        }
+        .navbar-brand img{
+        }
+        #registration-btn{
+            width: 120px;
+            float: right;
+            margin: 15px 5px;
+            height: 50px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #fff;
+            background-color: #2ed7f8;		
+        }
+        .navbar-nav>li {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .navbar-default {
+            background-color: #f8f8f8;
+            /* border-color: #e7e7e7; */
+            /* box-shadow: 1px 1px 5px rgba(0,0,0,0.3); */
+        }
+        .navbar-toggle{
+            margin-right:25px;
+        }
+        @media(max-width:768px){
+            .navbar-default .navbar-nav>li>a {
+                color: #777;
+                height: auto !important;
+                margin: 0px 0;
+            }
+            .navbar-nav {
+                float: none;
+            }
+            #registration-btn {
+                width: 33vw;
+                float: right;
+                /* margin: 7px; */
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+        .navbar-header{
+            display: none !important;
+        }
+        .affix .navbar-header{
+            display: inline-block !important;
+        }
+        @media (min-width: 768px){
+            .navbar-collapse.collapse {
+                display: inline-block !important;
+                height: auto!important;
+                padding-bottom: 0;
+                overflow: visible!important;
+            }
+        }
+    </style>
 </head>
 <div class="se-pre-con"></div>
-<body data-spy="scroll" data-target="#spyOnThis">
+<body>
     
     <!--Navigation Bar-->
     <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="180">
@@ -34,37 +164,95 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span> 
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="asset/images/alt-logo.png"><img src="asset/images/vh_logo.png"></a>
+                <a class="navbar-brand" href="index.html"><img src="asset/images/alt-logo.png"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="http://www.incubateind.com">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#challenges">Challenges</a></li>
                     <li><a href="#schedule">Agenda</a></li> 
                     <li><a href="#prizes">Prizes</a></li>
                     <li><a href="#rules">Rules</a></li> 
+                    <li id="mob-register"><a class="typeform-share button" href="https://smartcityincubateind.typeform.com/to/pFErVH" data-mode="popup" target="_blank"><button id="registration-btn"  style="width:80vw !important;  margin:10px 0;">Register</button> </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script></li>
                 </ul>
-                <a class="typeform-share button" href="https://smartcityincubateind.typeform.com/to/pFErVH" data-mode="popup" target="_blank"><button id="registration-btn" >Register</button> </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-
             </div>
+            <a class="typeform-share button" id="desk-register" href="https://smartcityincubateind.typeform.com/to/pFErVH" data-mode="popup" target="_blank"><button id="registration-btn" >Register</button> </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
         </div>
     </nav>
 
+
 <div class="container-fluid" style="padding:0px;"  id="spyOnThis">
-    <!--Landing-->
-    <div id="landing" style="background-image:url(asset/images/landing_background.jpg);">
-        <div class="landing-inside">
-             
-            <div id="content-wrapper">
-                <img src="asset/images/vh_logo.png">
-                <img src="asset/images/largest.png">
-                <a class="typeform-share button" href="https://smartcityincubateind.typeform.com/to/pFErVH" data-mode="popup" target="_blank"><button type="button" class="btn  btn-lg">Register</button></a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-            </div>
-             
-        </div>
-        <img src="asset/images/curve.svg" style="width: 100%;height: 30px;position: absolute;bottom:-1px;">
-    </div>
+    
+    <div id="container" class="wrapper">
+		<ul id="scene" class="scene unselectable"
+			data-friction-x="0.1"
+			data-friction-y="0.1"
+			data-scalar-x="25"
+			data-scalar-y="15">
+			<li class="layer" data-depth="0.00"></li>
+			<li class="layer" data-depth="0.10"><div class="background"></div></li>
+			<li class="layer" data-depth="0.10"><div class="light orange b phase-4"></div></li>
+			<li class="layer" data-depth="0.10"><div class="light purple c phase-5"></div></li>
+			<li class="layer" data-depth="0.10"><div class="light orange d phase-3"></div></li>
+			<!-- <li class="layer" data-depth="0.15">
+				<ul class="rope depth-10">
+					<li><img src="assets/images/rope.png" alt="Rope"></li>
+					<li class="hanger position-2">
+						<div class="board cloud-2 swing-1"></div>
+					</li>
+					<li class="hanger position-4">
+						<div class="board cloud-1 swing-3"></div>
+					</li>
+					<li class="hanger position-8">
+						<div class="board birds swing-5"></div>
+					</li>
+				</ul>
+			</li> -->
+			
+			<li class="layer" data-depth="0.20"><h1 class="title" style="text-transform:uppercase;">Hackathon<p class="title-p">India's Largest Aviation Hackathon</p></h1></li>
+			
+			<li class="layer" data-depth="0.30"><div class="wave paint depth-30"></div></li>
+			<li class="layer" data-depth="0.40"><div class="wave plain depth-40"></div></li>
+			<li class="layer" data-depth="0.50"><div class="wave paint depth-50"></div></li>
+			<li class="layer" data-depth="0.30">
+				<!-- <ul class="rope depth-80">
+					<li><img src="assets/images/rope.png" alt="Rope"></li>
+					<li class="hanger position-3">
+						<div class="board birds swing-5"></div>
+					</li>
+					<li class="hanger position-6">
+						<div class="board cloud-2 swing-2"></div>
+					</li>
+					<li class="hanger position-8">
+						<div class="board cloud-2 swing-4"></div>
+					</li>
+				</ul> -->
+			</li>
+			<li class="layer" data-depth="0.60"><div class="wave plain depth-60"></div></li>
+			<li class="layer" data-depth="0.80"><div class="wave plain depth-80"></div></li>
+			<li class="layer" data-depth="1.00"><div class="wave paint depth-100"></div></li>
+			<li class="layer" data-depth="0.20">
+					<ul class="rope">
+						<!-- <li><img src="assets/images/rope.png" alt="Rope"></li> -->
+						<li class="hanger position-1">
+							<div class="board cloud-1 "></div>
+						</li>
+						<li class="hanger position-5">
+							<div class="board cloud-4 "></div>
+						</li>
+					</ul>
+				</li>
+		</ul>
+	</div>
+
+
+
+
+
+
+
+
 
     <!--About-->
     <div class="container" id="about">
@@ -74,7 +262,7 @@
             The<span class="about-bold">Vistara Hackathon</span>in partnership with<span class="about-bold">IncubateIND</span>, brings India's Largest Aviation <span style="font-weight:300;">Hackathon</span> and takes you on a new voyage of the hack with talented teams of developers, designers, and data scientists that blend <span style="font-weight:300;">innovation</span> with creativity and construct solutions out of it, making your experience peerless
             and one of a kind. Team up with us on this unique and exciting journey on the same day, at the same time in two cities <span class="about-bold">(Delhi and Bengaluru)</span> on <span class="about-bold">October 7<sup>th</sup> to 8<sup>th</sup></span>.
         </p>
-        <img id="date-fort" src="asset/images/date_creative.png">
+        <img id="date-fort" src="asset/images/date_creative.png"  class="center-block">
     </div>
 
     <!-- Information -->
@@ -105,49 +293,49 @@
             
 
             <div class="prob">
-                <img src="asset/images/global.svg">
+                <img src="asset/images/global.svg" class="center-block">
                 <p>
                     The Business Travel Journey
                 </p>
             </div>
             <div class="prob">
-                <img src="asset/images/cloud-computing.svg">
+                <img src="asset/images/cloud-computing.svg" class="center-block">
                 <p>
                         The Data Travel
                 </p>
             </div>
             <div class="prob">
-                <img src="asset/images/planning.svg">
+                <img src="asset/images/planning.svg" class="center-block">
                 <p>
                         Customers Survey Complaints
                 </p>
             </div>
             <div class="prob">
-                <img src="asset/images/operator.svg">
+                <img src="asset/images/operator.svg" class="center-block">
                 <p>
                         Customers Experience
                 </p>
             </div>
             <div class="prob">
-                <img src="asset/images/airplane.svg">
+                <img src="asset/images/airplane.svg" class="center-block">
                 <p>
                         Travel and Tourism
                 </p>
             </div>
             <div class="prob">
-                <img src="asset/images/api.svg">
+                <img src="asset/images/api.svg" class="center-block">
                 <p>
                         Software and API
                 </p>
             </div>
             <div class="prob">
-                <img src="asset/images/artificial-intelligence.svg">
+                <img src="asset/images/artificial-intelligence.svg" class="center-block">
                 <p>
                         IOT/Robotics
                 </p>
             </div>
             <div class="prob">
-                <img src="asset/images/market.svg">
+                <img src="asset/images/market.svg" class="center-block">
                 <p>
                         Marketing
                 </p>
@@ -159,7 +347,7 @@
      <!--Tagline-->
     <div id="tagline" style="background-image:url(asset/images/problem-bg.jpg);">
         <div class="container">
-           <img src="asset/images/aviation.png" >
+           <img src="asset/images/aviation.png" class="center-block" >
         </div> 
     </div>
 
@@ -314,8 +502,8 @@
         </div>
         <div class="col-sm-12">
             <h4  style="text-align: center;">Venue Partners</h4>
-            <a href="http://kstart.in/"><div class="col-sm-6"><img src="asset/images/kstart.png"></div></a>
-            <a href="http://www.mdi.ac.in/"><div class="col-sm-6"><img src="asset/images/mdi.jpg"></div></a>
+            <a href="http://kstart.in/"><div class="col-sm-6"><img src="asset/images/kstart.png"  class="center-block"></div></a>
+            <a href="http://www.mdi.ac.in/"><div class="col-sm-6"><img src="asset/images/mdi.jpg"  class="center-block"></div></a>
         </div>
         <div class="col-sm-3">
         </div>
@@ -429,7 +617,7 @@
             <div class="col-md-3 col-sm-6 footer-col text-center">
                 <h6 class="heading7">Quicklinks</h6>
                 <ul class="footer-ul">
-                    <li><a href="#about"> About</a></li>
+                    <li ><a href="#about"> About</a></li>
                     <li><a href="#challenges">Challenges</a></li>
                     <li><a href="#schedule">Agenda</a></li>
                     <li><a href="#rules"> Rules</a></li>
@@ -505,7 +693,90 @@
     <script>
         $(window).load(function(){$(".se-pre-con").fadeOut("slow")});$(document).ready(function(){$('body').scrollspy({target:".navbar",offset:180});$("#myNavbar a").on('click',function(event){if(this.hash!==""){event.preventDefault();var hash=this.hash;$('html, body').animate({scrollTop:$(hash).offset().top},800,function(){window.location.hash=hash})}})});$('#spyOnThis').scrollspy()
     </script>
+    <!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<script src="assets/scripts/js/libraries.min.js"></script>
+    <script src="deploy/jquery.parallax.js"></script>
+	<script>
 
+	// jQuery Selections
+	var $html = $('html'),
+			$container = $('#container'),
+			$prompt = $('#prompt'),
+			$toggle = $('#toggle'),
+			$about = $('#about'),
+			$scene = $('#scene');
+
+	// Hide browser menu.
+	(function() {
+		setTimeout(function(){window.scrollTo(0,0);},0);
+	})();
+
+	// Setup FastClick.
+	FastClick.attach(document.body);
+
+	// Add touch functionality.
+	if (Hammer.HAS_TOUCHEVENTS) {
+		$container.hammer({drag_lock_to_axis: true});
+		_.tap($html, 'a,button,[data-tap]');
+	}
+
+	// Add touch or mouse class to html element.
+	$html.addClass(Hammer.HAS_TOUCHEVENTS ? 'touch' : 'mouse');
+
+	// Resize handler.
+	(resize = function() {
+		$scene[0].style.width = window.innerWidth + 'px';
+		$scene[0].style.height = window.innerHeight + 'px';
+		if (!$prompt.hasClass('hide')) {
+			if (window.innerWidth < 600) {
+				$toggle.addClass('hide');
+			} else {
+				$toggle.removeClass('hide');
+			}
+		}
+	})();
+
+	// Attach window listeners.
+	window.onresize = _.debounce(resize, 200);
+	window.onscroll = _.debounce(resize, 200);
+
+	function showDetails() {
+		$about.removeClass('hide');
+		$toggle.removeClass('i');
+	}
+
+	function hideDetails() {
+		$about.addClass('hide');
+		$toggle.addClass('i');
+	}
+
+	// Listen for toggle click event.
+	$toggle.on('click', function(event) {
+		$toggle.hasClass('i') ? showDetails() : hideDetails();
+	});
+
+	// Pretty simple huh?
+	$scene.parallax();
+
+	// Check for orientation support.
+	setTimeout(function() {
+		if ($scene.data('mode') === 'cursor') {
+			$prompt.removeClass('hide');
+			if (window.innerWidth < 600) $toggle.addClass('hide');
+			$prompt.on('click', function(event) {
+				$prompt.addClass('hide');
+				if (window.innerWidth < 600) {
+					setTimeout(function() {
+						$toggle.removeClass('hide');
+					},1200);
+				}
+			});
+		}
+	},1000);
+    </script>
+    
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

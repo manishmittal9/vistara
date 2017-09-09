@@ -4,7 +4,7 @@ body {
   }
 /*Navigation Styling*/
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
-    margin-left: 5%;
+    margin-left: 0;
 }
 
 .navbar-default {
@@ -55,14 +55,15 @@ body {
 
 .navbar-brand{
   padding: 0px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   margin-top: 0px;
 }
 
 .navbar-brand img{
   /* height: 149%; */
-  padding: 15px;
-  width: 191px;
+  /* padding: 15px; */
+  width: 200px;
+  margin: 20px;
 }
 /* @media (min-width: 769px) and (max-width:768px){
    .collapse {
@@ -106,6 +107,22 @@ body {
     background-color:#fff;
 
   }
+  .navbar-toggle {
+      margin-right: 0px !important;
+  }
+  .navbar-brand {
+      height: auto ; 
+      width: auto !important;
+  }
+  .title-p {
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    display: block;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: -8px;
+}
 
   #content-wrapper{
     max-width: 90% !important;
@@ -124,15 +141,13 @@ body {
     font-size: 1.4rem;
   }
 
-    .navbar img:nth-child(1){
+    .navbar img{
         display: inline-block !important;
     }
-    .navbar-header img:nth-child(2){
-        display: none;
+    .affix .navbar img:nth-child(2){
+        display: inline-block;
     }
-    .affix .navbar-header img:nth-child(1){
-        display: 
-    }
+    
     .navbar-collapse{
         background-color:#fff;
     }
@@ -156,9 +171,6 @@ body {
       padding-top: 7px;
       padding-bottom: 0px;
     }
-}
-.navbar img:nth-child(1){
-    display: none;
 }
 .navbar-toggle {
     position: relative;
@@ -189,14 +201,14 @@ body {
     transition: all .5s ease-in-out;
 }
 
-.affix img{
+.affix .navbar-brand img{
     display: inline;
 }
 .affix img:nth-child(2){
     display: none;
 }
-.affix img:nth-child(1){
-    display: inline-block;
+.affix img{
+    display: inline-block !important;
 }
 .affix #registration-btn{
   display: inline-block;
@@ -205,8 +217,8 @@ body {
 }
 .navbar-brand img{display: none;}
 .navbar button#registration-btn{
-    margin: 15px 5px auto;
-    width: 150px;
+    margin: 20px;
+    width: 160px !important;
     float: right;
     padding: 10px 0;
     outline: none;
@@ -223,7 +235,7 @@ body {
     display: inline-block !important;
 }
 .affix .navbar-nav {
-    width: calc(100% - 360px);
+    /* width: calc(100% - 360px); */
     text-align: center;
 }
 
@@ -1318,7 +1330,7 @@ Main components
     text-align: center;
 }
 #partners img{
-    width: 70%;
+    width: 50%;
 }
 
 .prize{
@@ -1348,4 +1360,18 @@ Main components
   #date-fort {
       display: none;
   }
+  #mob-register{
+    display: block !important;
+    margin:auto !important;
+  }
+  .navbar #mob-register  button#registration-btn {
+    display: none;
+    margin: auto !important;
+  }
+  #desk-register{
+    display: none !important;
+  }
+}
+#mob-register{
+  display: none;
 }
