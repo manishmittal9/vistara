@@ -1057,10 +1057,10 @@ Main components
     text-transform: inherit;
 }
 .modal-body button{
-    padding: 10px 30px;
+    padding: 10px 0px;
     background-color: #ffffff;
     color: #191e27;
-    letter-spacing: 7px;
+    letter-spacing: 1px;
     border: 1px solid #2ed7f8;
     text-transform: uppercase;
     outline: 0;
@@ -1068,6 +1068,17 @@ Main components
     border-radius: 30px;
 }
 
+.hashtag{
+  text-transform: none;
+  font-size: 5rem;
+}
+
+@media all and (max-width: 780px){
+  .hashtag{
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+  }
+}
 #date-fort{
   width:60%; 
   margin-top: 20px; 
@@ -1349,9 +1360,9 @@ Main components
 }
 
 #partners h4{
-  margin-bottom: -15px;
+  margin-bottom: -8px;
   text-transform: uppercase;
-  font-size: 16px; 
+  font-size: 12px; 
   letter-spacing: 2px;
   font-weight: bold;
 }

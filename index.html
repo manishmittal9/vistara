@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="title" content="Vistara Hackathon Delhi-Aviation Hackathon Bangalore 2017 ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Join the Vistara Hackathon 2017 in Delhi, Bangalore. Register for India's largest Aviation Hackathon and get a chance to hire by Vistara and Amazon.">
     <meta name="author" content="Manish Mittal http://in.linkedin.com/in/manishmittal9/, Siddhant Goral">
 
-    <title>Vistara Hackathon</title>
+    <title>Vistara Hackathon Delhi-Aviation Hackathon Bangalore 2017</title>
 
     <link rel="icon" href="asset/images/icon.png">
 
@@ -18,6 +17,7 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" type="text/css" href="assets/styles/css/styles.css"/>
+    <link href="assets/styles/css/mb-comingsoon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles/css/style-1.css"/>
     
@@ -29,57 +29,6 @@
     <link rel="stylesheet" type="text/css" href="asset/css/modernizr.min.css">
 
     <style>
-        .typeform-popup-wrapper.typeform-popup-mode-popup .typeform-close-icon {
-            top: -34px;
-            right: -34px;
-            opacity: 0;
-        }
-        .typeform-popup-wrapper.typeform-popup-mode-popup {
-            visibility: hidden;
-            opacity: 0;
-            width: 100vw !important;
-            height: 100vh !important;
-            top: 0px !important;
-            left: 0px !important;
-            transition: opacity .3s ease-out;
-        }
-        .typeform-popup-wrapper.typeform-popup-mode-popup .typeform-close-icon {
-            top: 10px !important;
-            right: 10px !important;
-            height: 60px !important;
-            width: 60px !important;
-            z-index: 100009 !important;
-            opacity: 1 !important;
-            /* box-shadow: 1px 1px 5px #000; */
-        }
-        .typeform-close qa-close-button-mobile span{
-            background-color:#000 !important;
-        }
-        .typeform-modal .typeform-close span {
-            border-radius: 0 !important;
-            display: block !important;
-            height: 3px !important;
-            width: 40px !important;
-            position: absolute !important;
-            right: 12px !important;
-            top: 21px !important;
-        }
-        .typeform-modal .typeform-close {
-            position: absolute;
-            z-index: 1001;
-            top: 0;
-            right: 0;
-            font-size: 20px;
-            font-family: sans-serif;
-            width: 68px !important;
-            height: 67px !important;
-            background-color: #142d4a !important;
-        }
-        .typeform-share{
-            padding: 0px !important;
-            margin: 0px  !important;
-            height: 0px  !important;
-        }
         .collapseing {
             display: block;
             height: auto !important;
@@ -164,7 +113,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span> 
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="asset/images/alt-logo.png"></a>
+                <a class="navbar-brand" href="index.html"><img src="asset/images/alt-logo.png" alt="Vistara Hackathon"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
@@ -174,10 +123,12 @@
                     <li><a href="#schedule">Agenda</a></li> 
                     <li><a href="#prizes">Prizes</a></li>
                     <li><a href="#rules">Rules</a></li> 
-                    <li id="mob-register"><a class="typeform-share button" href="https://smartcityincubateind.typeform.com/to/pFErVH" data-mode="popup" target="_blank"><button id="registration-btn"  style="width:80vw !important;  margin:10px 0;">Register</button> </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script></li>
+                    <li id="mob-register">
+                    	<a data-toggle="modal" data-target="#register" target="_blank"><button id="registration-btn" style="width:80vw !important;  margin:10px 0;">Registrations are now closed</button></a>
+                	</li>
                 </ul>
             </div>
-            <a class="typeform-share button" id="desk-register" href="https://smartcityincubateind.typeform.com/to/pFErVH" data-mode="popup" target="_blank"><button id="registration-btn" >Register</button> </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+            <a id="desk-register" data-toggle="modal" data-target="#register"><button id="registration-btn" style="font-size: 10px;padding: 5px 5px;">Registrations are now closed</button></a>
         </div>
     </nav>
 
@@ -195,20 +146,6 @@
 			<li class="layer" data-depth="0.10"><div class="light orange b phase-4"></div></li>
 			<li class="layer" data-depth="0.10"><div class="light purple c phase-5"></div></li>
 			<li class="layer" data-depth="0.10"><div class="light orange d phase-3"></div></li>
-			<!-- <li class="layer" data-depth="0.15">
-				<ul class="rope depth-10">
-					<li><img src="assets/images/rope.png" alt="Rope"></li>
-					<li class="hanger position-2">
-						<div class="board cloud-2 swing-1"></div>
-					</li>
-					<li class="hanger position-4">
-						<div class="board cloud-1 swing-3"></div>
-					</li>
-					<li class="hanger position-8">
-						<div class="board birds swing-5"></div>
-					</li>
-				</ul>
-			</li> -->
 			
 			<li class="layer" data-depth="0.20"><h1 class="title" style="text-transform:uppercase;">Hackathon<p class="title-p">India's Largest Aviation Hackathon</p></h1></li>
 			
@@ -216,25 +153,12 @@
 			<li class="layer" data-depth="0.40"><div class="wave plain depth-40"></div></li>
 			<li class="layer" data-depth="0.50"><div class="wave paint depth-50"></div></li>
 			<li class="layer" data-depth="0.30">
-				<!-- <ul class="rope depth-80">
-					<li><img src="assets/images/rope.png" alt="Rope"></li>
-					<li class="hanger position-3">
-						<div class="board birds swing-5"></div>
-					</li>
-					<li class="hanger position-6">
-						<div class="board cloud-2 swing-2"></div>
-					</li>
-					<li class="hanger position-8">
-						<div class="board cloud-2 swing-4"></div>
-					</li>
-				</ul> -->
 			</li>
 			<li class="layer" data-depth="0.60"><div class="wave plain depth-60"></div></li>
 			<li class="layer" data-depth="0.80"><div class="wave plain depth-80"></div></li>
 			<li class="layer" data-depth="1.00"><div class="wave paint depth-100"></div></li>
 			<li class="layer" data-depth="0.20">
 					<ul class="rope">
-						<!-- <li><img src="assets/images/rope.png" alt="Rope"></li> -->
 						<li class="hanger position-1">
 							<div class="board cloud-1 "></div>
 						</li>
@@ -245,24 +169,24 @@
 				</li>
 		</ul>
 	</div>
-
-
-
-
-
-
-
-
+    <div style="text-align: center;">
+    <h3><a href="Shortlisted_Teams.pdf" style="padding: 1px 5px; border-radius: 3px; background-color: #2ed7f8; color: white; text-decoration: none;"> Selected Teams </a></h3>
+    <p style="padding: 0 10%;">*<u>Note</u> - We're selecting teams on a rolling basis. Keep a watch on this list, we'll be adding more teams soon.</p>
+    <p style="padding: 0 10%; font-weight: bolder;">You can still join us, follow this <a href="https://twitter.com/IncubateIND/status/912993507937198081" style="font-weight: 800;">post</a> for more information.</p>
+    <h3 style="padding: 10px 3%;">4532 Applications Received | 29 States | 2 Venues | 1 Nation</h3>
+    <p style="font-weight: 800; padding: 0 10%;">Be prepared for the best hackathon experience.</p>
+    <h2 class="hashtag"><b>#</b>DisruptionInAviation</h2>
+    </div>
 
     <!--About-->
     <div class="container" id="about">
         <h1>About Vistara Hackathon</h1>
         <hr class="head-line">
-        <p>
-            The<span class="about-bold">Vistara Hackathon</span>in partnership with<span class="about-bold">IncubateIND</span>, brings India's Largest Aviation <span style="font-weight:300;">Hackathon</span> and takes you on a new voyage of the hack with talented teams of developers, designers, and data scientists that blend <span style="font-weight:300;">innovation</span> with creativity and construct solutions out of it, making your experience peerless
-            and one of a kind. Team up with us on this unique and exciting journey on the same day, at the same time in two cities <span class="about-bold">(Delhi and Bengaluru)</span> on <span class="about-bold">October 7<sup>th</sup> to 8<sup>th</sup></span>.
-        </p>
-        <img id="date-fort" src="asset/images/date_creative.png"  class="center-block">
+        <p>The Vistara Hackathon brings India&#39;s Largest Aviation Hackathon <span class="about-bold">Vistara Hackathon 2017</span> in partnership with <span class="about-bold">IncubateIND</span> and takes you on a new voyage of the hack with talented teams of developers, designers, and data scientists.</p>
+        <p>The world is evolving at a fast pace. India is endeavouring to become the third-largest aviation market by 2026 but IT in airlines has still a long way to go. With the passage of time, the surge in the population on the airports have given rise to a lot of problems in the airlines such as reduction in the efficiency in work due to running security gauntlet, dealing with paperwork and procedures, in-flight connectivity, security, safety in the air, rising operating costs etc. Flying today has become completely different from what it was before. If airlines want to survive, they need to do something exceptional in order to give a seamless flying experience to its customers.</p>
+         <p>While Indian Aviation lags behind in using advanced technology, there is a great prospect and aspiration among Indian Aviation to bring the country in line with the rest of the world. Vistara is one such aviation which is determined to render smooth services to its customers, making their experience hassle-free. The only aviation to be born on the cloud, Vistara has moved a step ahead towards its commitment, making flying matchless in the form of Vistara Hackathon.</p>
+         <p>This 30-hour long hackathon focuses on the aviation industry as it relates to developing the airport of the future. It blends <span class="about-bold">innovation</span> with creativity and constructs solutions to the problems in the areas such as the business travel journey, the data travel, customers survey complaints, customersexperience, travel and tourism, software and API, IOT and robotics and marketing, making your experience peerless and one of a kind. Team up with us on this unique and exciting journey on the same day, at the same time in two cities <span class="about-bold">Delhi and Bengaluru</span> on <span class="about-bold">October 7<sup>th</sup> to 8<sup>th</sup></span>.</p>
+        <img id="date-fort" src="asset/images/date_creative.png" alt="Vistara Hackathon Delhi NCR and Bengaluru on 7-8 October" class="center-block">
     </div>
 
     <!-- Information -->
@@ -270,7 +194,7 @@
         <div class="info-hack">
             <div class="col-sm-4 info-row">
                 <h4>Registration From</h4>
-                <p>24<sup>th</sup> Aug - 25<sup>th</sup> Sept</p>
+                <p>24<sup>th</sup> Aug - 28<sup>th</sup> Sept</p>
             </div>
             <div class="col-sm-4 info-row" style="background-color:#4b6794;" >
                 <h4>Hackathon Day</h4>
@@ -293,49 +217,49 @@
             
 
             <div class="prob">
-                <img src="asset/images/global.svg" class="center-block">
+                <img src="asset/images/global.svg" class="center-block" alt="The Business Travel Journey">
                 <p>
                     The Business Travel Journey
                 </p>
             </div>
             <div class="prob">
-                <img src="asset/images/cloud-computing.svg" class="center-block">
+                <img src="asset/images/cloud-computing.svg" class="center-block" alt="The Data Travel">
                 <p>
                         The Data Travel
                 </p>
             </div>
             <div class="prob">
-                <img src="asset/images/planning.svg" class="center-block">
+                <img src="asset/images/planning.svg" class="center-block" alt="Customers Survey Complaints">
                 <p>
                         Customers Survey Complaints
                 </p>
             </div>
             <div class="prob">
-                <img src="asset/images/operator.svg" class="center-block">
+                <img src="asset/images/operator.svg" class="center-block" alt="Customers Experience">
                 <p>
                         Customers Experience
                 </p>
             </div>
             <div class="prob">
-                <img src="asset/images/airplane.svg" class="center-block">
+                <img src="asset/images/airplane.svg" class="center-block" alt="Travel and Tourism">
                 <p>
                         Travel and Tourism
                 </p>
             </div>
             <div class="prob">
-                <img src="asset/images/api.svg" class="center-block">
+                <img src="asset/images/api.svg" class="center-block" alt="Software and API">
                 <p>
                         Software and API
                 </p>
             </div>
             <div class="prob">
-                <img src="asset/images/artificial-intelligence.svg" class="center-block">
+                <img src="asset/images/artificial-intelligence.svg" class="center-block" alt="IOT/Robotics">
                 <p>
                         IOT/Robotics
                 </p>
             </div>
             <div class="prob">
-                <img src="asset/images/market.svg" class="center-block">
+                <img src="asset/images/market.svg" class="center-block" alt="Marketing">
                 <p>
                         Marketing
                 </p>
@@ -347,7 +271,7 @@
      <!--Tagline-->
     <div id="tagline" style="background-image:url(asset/images/problem-bg.jpg);">
         <div class="container">
-           <img src="asset/images/aviation.png" class="center-block" >
+           <img src="asset/images/aviation.png" class="center-block" alt="Vistara Hackathon Problem Statements">
         </div> 
     </div>
 
@@ -365,91 +289,133 @@
                 <p> Check In 
                     
                 </p>
-                <img src="asset/images/clock.svg">
-                <span class="time-hack">09:00 AM</span>
+                <img src="asset/images/clock.svg" alt="Vistara Hackathon Schedule">
+                <span class="time-hack">08:30 AM - 09:30 AM</span>
             </div>
             <div class="time hack-12">
-                <p> Opening Ceremony 
+                <p> Inaugration
                     
                 </p>
-                <img src="asset/images/clock.svg">
-                <span class="time-hack">10:00 AM</span>
+                <img src="asset/images/clock.svg" alt="Vistara Hackathon Schedule">
+                <span class="time-hack">09:30 AM - 10:30 AM</span>
+            </div>
+            <div class="time hack-12">
+                <p> Opening Keynote 
+                    
+                </p>
+                <img src="asset/images/clock.svg" alt="Vistara Hackathon Schedule">
+                <span class="time-hack">10:30 AM - 11:30 AM</span>
             </div>
             <div class="time hack-12">
                 <p> Hack Begins
                     
                 </p>
-                <img src="asset/images/clock.svg">
-                <span class="time-hack">11:00 AM</span>
+                <img src="asset/images/clock.svg" alt="Vistara Hackathon Schedule">
+                <span class="time-hack">11:30 AM</span>
             </div>
             <div class="time hack-12">
                 <p> Networking over Lunch
                     
                 </p>
-                <img src="asset/images/clock.svg">
-                <span class="time-hack">01:00 PM</span>
+                <img src="asset/images/clock.svg" alt="Vistara Hackathon Schedule">
+                <span class="time-hack">01:00 PM - 02:00 PM</span>
+            </div>
+            <div class="time hack-12">
+                <p> Workshop 1 - Amazon
+                    
+                </p>
+                <img src="asset/images/clock.svg" alt="Vistara Hackathon Schedule">
+                <span class="time-hack">02:00 PM - 02:30 PM</span>
+            </div>
+            <div class="time hack-12">
+                <p> Workshop 2 - Adobe
+                    
+                </p>
+                <img src="asset/images/clock.svg" alt="Vistara Hackathon Schedule">
+                <span class="time-hack">02:30 PM - 03:00 PM</span>
+            </div>
+            <div class="time hack-12">
+                <p> Workshop 3 - "Product Design"
+                    
+                </p>
+                <img src="asset/images/clock.svg" alt="Vistara Hackathon Schedule">
+                <span class="time-hack">02:00 PM - 02:30 PM</span>
+            </div>
+            <div class="time hack-12">
+                <p> High Tea
+                    
+                </p>
+                <img src="asset/images/clock.svg" alt="Vistara Hackathon Schedule">
+                <span class="time-hack">05:30 PM - 06:00 PM</span>
             </div>
             <div class="time hack-12">
                 <p> Checkpoint 1
                     
                 </p>
-                <img src="asset/images/clock.svg">
-                <span class="time-hack">07:00 PM</span>
+                <img src="asset/images/clock.svg" alt="Vistara Hackathon Schedule">
+                <span class="time-hack">07:00 PM - 08:30 PM</span>
             </div>
             <div class="time hack-12">
                 <p> Dinner
                     
                 </p>
-                <img src="asset/images/clock.svg">
-                <span class="time-hack">08:30 PM</span>
+                <img src="asset/images/clock.svg" alt="Vistara Hackathon Schedule">
+                <span class="time-hack">08:30 PM - 09:30 PM</span>
             </div>
             <div class="time hack-12">
                 <p> Midnight Snack
                     
                 </p>
-                <img src="asset/images/clock.svg">
+                <img src="asset/images/clock.svg" alt="Vistara Hackathon Schedule">
                 <span class="time-hack">00:30 AM</span>
             </div>
             <div class="time hack-12">
                 <p> Checkpoint 2
                     
                 </p>
-                <img src="asset/images/clock.svg">
-                <span class="time-hack">02:00 AM</span>
+                <img src="asset/images/clock.svg" alt="Vistara Hackathon Schedule">
+                <span class="time-hack">02:00 AM - 03:00 AM</span>
             </div>
             <div class="time hack-12">
                 <p> Breakfast
                     
                 </p>
-                <img src="asset/images/clock.svg">
-                <span class="time-hack">08:00 AM</span>
+                <img src="asset/images/clock.svg" alt="Vistara Hackathon Schedule">
+                <span class="time-hack">08:00 AM - 09:00 AM</span>
+            </div>
+            <div class="time hack-12">
+                <p> Final Checkpoint
+                    
+                </p>
+                <img src="asset/images/clock.svg" alt="Vistara Hackathon Schedule">
+                <span class="time-hack">09:00 AM</span>
             </div>
             <div class="time hack-12">
                 <p> Final Submission
                     
                 </p>
-                <img src="asset/images/clock.svg">
-                <span class="time-hack">11:30 AM</span>
+                <img src="asset/images/clock.svg" alt="Vistara Hackathon Schedule">
+                <span class="time-hack">11:30 AM - 12:00 PM</span>
             </div>
             <div class="time hack-12">
                 <p> Lunch
                     
                 </p>
-                <img src="asset/images/clock.svg">
-                <span class="time-hack">12:30 PM</span>
+                <img src="asset/images/clock.svg" alt="Vistara Hackathon Schedule">
+                <span class="time-hack">12:00 PM</span>
             </div>
             <div class="time hack-12">
                 <p> Pitching Sessions
                     
                 </p>
-                <img src="asset/images/clock.svg">
-                <span class="time-hack">01:30 PM</span>
+                <img src="asset/images/clock.svg" alt="Vistara Hackathon Schedule">
+                <span class="time-hack">01:00 PM</span>
             </div>
             <div class="time hack-12">
                 <p> Closing Ceremony
                     
                 </p>
-                <img src="asset/images/clock.svg">
+                <img src="asset/images/clock.svg" alt="Vistara Hackathon Schedule">
                 <span class="time-hack">03:00 PM</span>
             </div>
         </div>      
@@ -461,7 +427,7 @@
                 <h2>Prizes worth <span class="fa fa-rupee"></span> Lakhs</h2>
                 <hr class="head-line" style="border:0;">
             <div class="col-sm-12">
-                <img src="asset/images/prize.png" class="center-block">
+                <img src="asset/images/prize.png" class="center-block" alt="Hackathon Prizes">
             </div>
             <div class="col-sm-12">
                 <h2 style="text-transform: none; letter-spacing: 2px;">Hiring Opportunities from Vistara and Amazon</h2>
@@ -475,8 +441,8 @@
         <div class="container">
             <h2>Venue</h2>
             <hr class="head-line">
-            <p style="margin-bottom:30px; font-size: 18px; letter-spacing: 1px; line-height: 24px; text-align: center;"><b>MDI Gurgaon</b> Block C, Sukhrali, Sector 17, Gurugram</p>
-            <p style="margin-bottom:30px; font-size: 18px; letter-spacing: 1px; line-height: 24px; text-align: center;"><b>Kstart</b> Ground floor, Unit-2, Navigator Building ITPB, Whitefield Road, Pattandur Agrahara Rd, Bengaluru</p>
+            <p style="margin-bottom:30px; font-size: 18px; letter-spacing: 1px; line-height: 24px; text-align: center;"><b>Delhi-NCR: 10,000 Startups NASSCOM,</b> Plot No. 7 to 10, Sector 126, Noida, Delhi NCR</p>
+            <p style="margin-dottom:30px; font-size: 18px; letter-spacing: 1px; line-height: 24px; text-align: center;"><b>Bengaluru: Kstart,</b> Unit 02-01 &amp; 27, Second Floor, Ascendas Park, Square Mall, ITPB, Whitefield Road, Bangalore</p> <br>
         </div>
         <div class="photo">
             <div class="row" style="margin:0;">
@@ -494,32 +460,40 @@
     <div id="partners" class="container">
         <div class="col-sm-6">
             <h4>Technology Partner</h4>
-            <a href="https://aws.amazon.com/activate/"><img src="asset/images/aws.png" class="center-block"></a>
+            <a href="https://aws.amazon.com/activate/"><img src="asset/images/aws.png" class="center-block" alt="AWS Activate"></a>
         </div>
         <div class="col-sm-6">
             <h4>Digital Sponsor</h4>
-            <a href="http://www.adobe.com/"><img src="asset/images/adobe.png" class="center-block"></a>
+            <a href="http://www.adobe.com/"><img src="asset/images/adobe.png" class="center-block" alt="Adobe"></a>
         </div>
         <div class="col-sm-12">
-            <h4  style="text-align: center;">Venue Partners</h4>
-            <a href="http://kstart.in/"><div class="col-sm-6"><img src="asset/images/kstart.png"  class="center-block"></div></a>
-            <a href="http://www.mdi.ac.in/"><div class="col-sm-6"><img src="asset/images/mdi.jpg"  class="center-block"></div></a>
+            <h4 style="text-align: center; padding-bottom: 25px;">Partners</h4>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-6">
+            <a href="http://kstart.in/"><img src="asset/images/kstart.png" alt="Kstart" class="center-block"></a>
+        </div>
+        <div class="col-sm-6">
+            <a href="http://10000startups.com/"><img src="asset/images/nasscom.png" alt="Nasscom" class="center-block"></a>
+        </div>
+	<div class="col-sm-12"></div>
+        <div class="col-sm-6">
+            <a href="http://www.amadeus.in/"><img src="asset/images/amadeus.jpg" alt="Amadeus" class="center-block"></a>
+        </div>
+	<div class="col-sm-6">
+            <a href="http://www.design4india.in/"><img src="asset/images/design4india.png" alt="Design4India" class="center-block"></a>
         </div>
     </div>
 
- 
     <!--Rules and Regulation-->
     <div id="rules">
         <div class="container">
             <h2>Rules and Regulation</h2>
             <hr class="head-line">
             <p class="rules-p">
-                The registrations are open from August 24<sup>th</sup> till September 25<sup>th</sup> and the shortlisted teams will be announced on or before 2<sup>ND</sup> October. By entering this Contest, you agree to be bound by these Official Contest Rules.
+                The registrations are open from August 24<sup>th</sup> till September 28<sup>th</sup> and the shortlisted teams will be announced on or before 2<sup>ND</sup> October. By entering this Contest, you agree to be bound by these Official Contest Rules.
             </p>
             <div class="col-sm-6" id="rules-left">
-                <img src="asset/images/Rules.png" class="center-block"/>
+                <img src="asset/images/Rules.png" class="center-block" alt="Vistara Hackathon Rules"/>
             </div>
             <div class="col-sm-6" id="rules-right">
                 <div style="display:block;">
@@ -602,13 +576,14 @@
         <div class="container">
             <div class="row">
             <div class="col-md-3 col-sm-6 footer-col">
-                <div class="logofooter"> <img src="asset/images/footer-logo.png" style="width:100%;"></div>
+                <div class="logofooter"> <img src="asset/images/footer-logo.png" style="width:100%;" alt="Vistara"></div>
                 <p>Vistara Hackathon is a 30-hour non-stop event to generate ideas and solutions that'll change the Aviation industry, an initiative by Vistara.</p>
                 <div>
                     <ul class="footer-social">
                         <li><a href="https://www.linkedin.com/company/tata-sia-airlines-limited"><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.facebook.com/AirVistara"><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="https://twitter.com/airvistara"><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.facebook.com/vistarahackathon"><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://twitter.com/vistarahack"><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></a></li>
+			<li><a href="https://www.instagram.com/vistarahackathon/"><i class="fa fa-instagram social-icon instagram" aria-hidden="true"></i></a></li>
                         <li><a href="https://plus.google.com/101497803100337433237/posts"><i class="fa fa-google-plus social-icon google" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
@@ -639,7 +614,7 @@
             <div class="col-md-3 col-sm-6 footer-col" >
                 <div>
                     <p>Powered By: </p>
-                    <img src="asset/images/IncubateIND.png" class="img-responsive">
+                    <img src="asset/images/IncubateIND.png" class="img-responsive" alt="IncubateIND">
                     <p style="margin-top:10px;">IncubateIND provides a central platform for all generations of explorers to discover, build and work together to solve world’s greatest problems through technology.</p>
                 </div>
                 <ul class="footer-social">
@@ -676,7 +651,8 @@
             <h4 class="modal-title">Registration</h4>
         </div>
         <div class="modal-body" id="modal-style">
-            <p style="text-align:center;">Registration will open onwards 24th August.</p>
+            <p style="text-align:center;">Registrations are now closed.</p>
+            <p style="text-align:center;">You can still join us, follow this <a href="https://twitter.com/IncubateIND/status/912993507937198081" style="font-weight: 800;">post</a> for more information.</p>
             <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
         </div>
         </div>
@@ -698,6 +674,7 @@
 	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 	<script src="assets/scripts/js/libraries.min.js"></script>
     <script src="deploy/jquery.parallax.js"></script>
+    <script src="assets/scripts/js/jquery.mb-comingsoon.js"></script>
 	<script>
 
 	// jQuery Selections
@@ -775,6 +752,40 @@
 			});
 		}
 	},1000);
+    </script>
+
+    <script>
+        $('#myCounter').mbComingsoon({
+            expiryDate: Date,
+            interval: 1000,       // Counter uopdate interval
+            speed: 500
+            localization: {
+            days: "days",       //Localize labels of counter
+            hours: "hours",
+            minutes: "minutes",
+            seconds: "seconds"
+            },
+            callBack: Function          //Function executed on expiry or if espired
+        }); 
+        $('#myCounter').mbComingSoon('start')       // start counter
+        //$('#myCounter').mbComingSoon('stop')        // stop counter
+        //$('#myCounter').mbComingSoon(options: Object)   // Update options
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            var $section = $('section');
+            $(window).on("resize", function () {
+                var dif = Math.max($(window).height() - $section.height(), 0);
+                var padding = Math.floor(dif / 2) + 'px';
+                $section.css({ 'padding-top': padding, 'padding-bottom': padding });
+            }).trigger("resize");
+            $('#myCounter').mbComingsoon({ expiryDate: new Date(2017, 9, -1, 0, 00), speed:100 });
+            setTimeout(function () {
+                $(window).resize();
+            }, 200);
+        });
+
     </script>
     
     <script>
